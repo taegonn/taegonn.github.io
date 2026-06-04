@@ -6,7 +6,7 @@ subtitle: M.S. candidate in Neuroscience, Seoul National University
 profile:
   align: right
   image: tg-profile.jpg
-  image_circular: false
+  image_circular: true
   more_info: >
     <p>Seoul National University</p>
 selected_papers: true
@@ -20,8 +20,6 @@ latest_posts:
 ---
 
 I am an M.S. candidate in Neuroscience at Seoul National University, advised by Prof. Ki-Young Jung. My research uses machine learning, sleep physiology, and clinical neuroscience to model disease progression in isolated REM sleep behavior disorder and related alpha-synucleinopathies.
-
-I am preparing for Ph.D. training in neuroscience and medical AI. I am especially interested in building multimodal biomarkers from PSG, EEG, EMG, brain MRI, and clinical data that can improve early diagnosis, staging, and prognosis in neurodegenerative disease.
 
 [Google Scholar](https://scholar.google.com/citations?user=gZOAJD4AAAAJ&hl=en) / [ORCID](https://orcid.org/0009-0001-1388-0903) / [LinkedIn](https://www.linkedin.com/in/tae-gon-noh-778857318/) / [GitHub](https://github.com/taegonn)
 
