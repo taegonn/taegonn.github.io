@@ -10,7 +10,6 @@ latest_posts:
 ---
 
 <style>
-/* al-folio 테마가 자동으로 출력하는 기본 제목 숨기기 */
 header.post-header, 
 .post-title {
   display: none !important;
@@ -155,32 +154,57 @@ header.post-header,
 
 
 ## Highlights & Selected Works
-
-<!-- 첫 번째 뉴스/논문 카드 -->
+<!-- 1. Basal EMG amplitude -->
 <div class="news-card">
   <div class="news-image">
-    <!-- assets/img 폴더에 abstract 이미지를 넣고 파일명을 아래에 맞춰주세요 -->
-    <img src="{{ '/assets/img/abstract-1.jpg' | relative_url }}" alt="Graphical Abstract">
+    <img src="{{ '/assets/img/Basal_EMG_amplitude.png' | relative_url }}" alt="Basal EMG amplitude">
   </div>
   <div class="news-content">
-    <div class="news-title">논문 제목 또는 하이라이트 타이틀 입력</div>
-    <div class="news-meta">Published in <em>Journal Name</em> (2024)</div>
-    <div class="news-desc">
-      이곳에 해당 연구의 Graphical Abstract에 대한 설명이나 핵심 발견(Key findings)을 간략하게 적습니다. 2~3문장으로 요약하여 방문자가 직관적으로 연구 내용을 파악할 수 있게 유도하세요.
-    </div>
+    <div class="news-title">Basal electromyographic amplitude in rapid eye movement (REM) and non-rapid eye movement (NREM) sleep as a predictor of disease progression in isolated REM sleep behavior disorder</div>
+    <div class="news-meta">TG Noh, JI Byun, EK St. Louis, KY Jung.<br>Published in <em>SLEEPJ</em> (2026)</div>
   </div>
 </div>
 
-<!-- 두 번째 뉴스/논문 카드 -->
+<!-- 2. Continuous RWA -->
 <div class="news-card">
   <div class="news-image">
-    <img src="{{ '/assets/img/abstract-2.jpg' | relative_url }}" alt="Graphical Abstract">
+    <img src="{{ '/assets/img/Continuous_RWA.png' | relative_url }}" alt="Continuous RWA">
   </div>
   <div class="news-content">
-    <div class="news-title">두 번째 프로젝트 또는 학회 발표 내용</div>
-    <div class="news-meta">Presented at <em>Conference Name</em> (2023)</div>
-    <div class="news-desc">
-      학회에서 발표한 포스터의 일부분이나 프로젝트의 파이프라인 이미지를 넣고, 어떤 문제를 어떤 모델로 해결했는지 어필할 수 있습니다.
-    </div>
+    <div class="news-title">Continuous REM sleep without atonia quantification improves prediction of phenoconversion to α-synucleinopathies in isolated REM sleep behavior disorder</div>
+    <div class="news-meta">TG Noh, S Lee, Y Lee, N Kim, DS Shin, JH Shin, JI Byun, HJ Kim, KY Jung.<br>Published in <em>Sleep Medicine</em> (2025)</div>
+  </div>
+</div>
+
+<!-- 3. Enhanced delta-gamma PAC -->
+<div class="news-card">
+  <div class="news-image">
+    <img src="{{ '/assets/img/Enhanced_delta_gamma_PAC.png' | relative_url }}" alt="Enhanced delta gamma PAC">
+  </div>
+  <div class="news-content">
+    <div class="news-title">Enhanced delta-gamma phase-amplitude coupling during phasic rapid eye movement sleep in isolated rapid eye movement sleep behavior disorder</div>
+    <div class="news-meta">TG Noh, KM Choi, JS Jun, JW Shin, JI Byun, JS Sunwoo, KY Jung.<br>Published in <em>Sleep</em> (2025)</div>
+  </div>
+</div>
+
+<!-- 4. ERP prediction -->
+<div class="news-card">
+  <div class="news-image">
+    <img src="{{ '/assets/img/ERP_prediction.png' | relative_url }}" alt="ERP prediction">
+  </div>
+  <div class="news-content">
+    <div class="news-title">Prediction of phenoconversion into alpha-synucleinopathy in patients with isolated REM sleep behavior disorder using event-related potentials during visuospatial attention tasks</div>
+    <div class="news-meta">KM Choi, KS Cha, TG Noh, S Lee, YW Shin, JI Byun, JS Jun, JH Shin, ...<br>Published in <em>Sleep</em> (2025)</div>
+  </div>
+</div>
+
+<!-- 5. FC network -->
+<div class="news-card">
+  <div class="news-image">
+    <img src="{{ '/assets/img/FC_network.png' | relative_url }}" alt="FC network">
+  </div>
+  <div class="news-content">
+    <div class="news-title">Altered functional brain networks in isolated REM sleep behavior disorder during phasic REM sleep</div>
+    <div class="news-meta">KM Choi, TG Noh, JS Sunwoo, JI Byun, KY Jung.<br>Published in <em>Sleep Medicine</em> (2025)</div>
   </div>
 </div>
