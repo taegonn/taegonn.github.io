@@ -1,13 +1,6 @@
 ---
 layout: about
-title: about
 permalink: /
-subtitle: "<span style='font-weight: 600;'>M.S. candidate in Neuroscience</span>, Seoul National University"
-profile:
-  align: right
-  image: tg-profile.jpg
-  image_circular: true 
-  more_info: ""
 selected_papers: false
 social: true
 announcements:
@@ -17,21 +10,42 @@ latest_posts:
 ---
 
 <style>
-.profile {
-  width: 160px !important;
-  max-width: 160px !important;
-  margin-left: 2.5rem !important;
-  margin-top: 1rem !important;
+.name-title {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 2.5rem;
+  color: #212529;
 }
 
-.profile img,
-.profile .img-fluid {
-  width: 160px !important;
-  height: 160px !important;
-  max-width: 160px !important;
-  object-fit: cover !important;
-  border-radius: 50% !important;
+.intro-container {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 3.5rem;
+}
+
+@media (max-width: 768px) {
+  .intro-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+}
+
+.intro-image img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
   box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+}
+
+.intro-text {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #333;
+  text-align: left;
 }
 
 .cv-item {
@@ -69,16 +83,25 @@ latest_posts:
 </style>
 
 
-I am an M.S. candidate in Neuroscience at Seoul National University. My research uses **machine learning, sleep physiology, medical imaging,** and **clinical neuroscience** to model disease progression in neurodegenerative diseases.
+<div class="name-title">Tae-Gon Noh</div>
 
-<div style="margin-top: 1rem; font-weight: 500; font-size: 0.95rem;">
-  <a href="https://scholar.google.com/citations?user=gZOAJD4AAAAJ&hl=en" style="margin-right: 15px; color: #4285F4; text-decoration: none;">🎓 Google Scholar</a>
-  <a href="https://orcid.org/0009-0001-1388-0903" style="margin-right: 15px; color: #A6CE39; text-decoration: none;">iD ORCID</a>
-  <a href="https://www.linkedin.com/in/tae-gon-noh-778857318/" style="margin-right: 15px; color: #0077B5; text-decoration: none;">💼 LinkedIn</a>
-  <a href="https://github.com/taegonn" style="color: #333; text-decoration: none;">🐙 GitHub</a>
+<div class="intro-container">
+  <div class="intro-image">
+    <img src="{{ '/assets/img/tg-profile.jpg' | relative_url }}" alt="Tae-Gon Noh">
+  </div>
+  <div class="intro-text">
+    <span style="font-weight: 600; font-size: 1.15rem;">M.S. candidate in Neuroscience</span>, Seoul National University<br><br>
+    My research uses <strong>machine learning, sleep physiology, medical imaging,</strong> and <strong>clinical neuroscience</strong> to model disease progression in neurodegenerative diseases.
+    
+    <div style="margin-top: 1.2rem; font-weight: 500; font-size: 0.95rem;">
+      <a href="https://scholar.google.com/citations?user=gZOAJD4AAAAJ&hl=en" style="margin-right: 15px; color: #4285F4; text-decoration: none;">🎓 Google Scholar</a>
+      <a href="https://orcid.org/0009-0001-1388-0903" style="margin-right: 15px; color: #A6CE39; text-decoration: none;">iD ORCID</a>
+      <a href="https://www.linkedin.com/in/tae-gon-noh-778857318/" style="margin-right: 15px; color: #0077B5; text-decoration: none;">💼 LinkedIn</a>
+      <a href="https://github.com/taegonn" style="color: #333; text-decoration: none;">🐙 GitHub</a>
+    </div>
+  </div>
 </div>
 
-<br>
 
 ## Research Focus
 
