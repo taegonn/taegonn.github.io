@@ -53,6 +53,12 @@ header.post-header,
   text-align: left;
 }
 
+/* 깃허브 링크 다크모드 대응을 위한 클래스 */
+.github-link {
+  color: #333;
+  text-decoration: none;
+}
+
 .research-keyword {
   color: #212529;
   border-bottom: 2.5px solid #a8c1d9;
@@ -67,7 +73,7 @@ header.post-header,
   margin-bottom: 2rem;
   padding: 1.2rem;
   border-radius: 12px;
-  background-color: #f8f9fa; /* 아주 연한 회색 배경 */
+  background-color: #f8f9fa;
   border: 1px solid #e9ecef;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -78,7 +84,7 @@ header.post-header,
 }
 
 .news-image {
-  flex: 0 0 220px; /* 이미지 영역 고정 너비 */
+  flex: 0 0 220px;
   display: flex;
   align-items: center;
 }
@@ -110,16 +116,46 @@ header.post-header,
   margin-bottom: 0.8rem;
 }
 
-.news-desc {
-  font-size: 0.95rem;
-  line-height: 1.5;
-  color: #495057;
-}
-
-/* 모바일 화면에서는 카드 이미지가 위로 가도록 변경 */
 @media (max-width: 768px) {
   .news-card { flex-direction: column; }
   .news-image { flex: auto; width: 100%; }
+}
+
+/* ==========================================
+   🌙 테마별 다크모드 (Dark Mode) 완벽 대응 오버라이드
+   ========================================== */
+html[data-theme='dark'] .name-title {
+  color: #f8f9fa !important;
+}
+
+html[data-theme='dark'] .intro-text {
+  color: #e0e0e0 !important;
+}
+
+html[data-theme='dark'] .github-link {
+  color: #e0e0e0 !important;
+}
+
+html[data-theme='dark'] .research-keyword {
+  color: #f8f9fa !important;
+  border-bottom: 2.5px solid #4a7a96;
+}
+
+html[data-theme='dark'] .news-card {
+  background-color: #1c1c1e !important;
+  border: 1px solid #2c2c2e !important;
+}
+
+html[data-theme='dark'] .news-title {
+  color: #f8f9fa !important;
+}
+
+html[data-theme='dark'] .news-meta {
+  color: #a0aab2 !important;
+}
+
+html[data-theme='dark'] .news-image img {
+  border: 1px solid #3a3a3c !important;
 }
 </style>
 
@@ -138,7 +174,7 @@ header.post-header,
       <a href="https://scholar.google.com/citations?user=gZOAJD4AAAAJ&hl=en" style="margin-right: 15px; color: #4285F4; text-decoration: none;">🎓 Google Scholar</a>
       <a href="https://orcid.org/0009-0001-1388-0903" style="margin-right: 15px; color: #A6CE39; text-decoration: none;">iD ORCID</a>
       <a href="https://www.linkedin.com/in/tae-gon-noh-778857318/" style="margin-right: 15px; color: #0077B5; text-decoration: none;">💼 LinkedIn</a>
-      <a href="https://github.com/taegonn" style="color: #333; text-decoration: none;">🐙 GitHub</a>
+      <a href="https://github.com/taegonn" class="github-link">🐙 GitHub</a>
     </div>
   </div>
 </div>
@@ -154,7 +190,6 @@ header.post-header,
 
 
 ## Highlights & Selected Works
-<!-- 1. Basal EMG amplitude -->
 <div class="news-card">
   <div class="news-image">
     <img src="{{ '/assets/img/Basal_EMG_amplitude.jpg' | relative_url }}" alt="Basal EMG amplitude">
@@ -165,7 +200,6 @@ header.post-header,
   </div>
 </div>
 
-<!-- 2. Continuous RWA -->
 <div class="news-card">
   <div class="news-image">
     <img src="{{ '/assets/img/Continuous_RWA.jpg' | relative_url }}" alt="Continuous RWA">
@@ -176,7 +210,6 @@ header.post-header,
   </div>
 </div>
 
-<!-- 3. Enhanced delta-gamma PAC -->
 <div class="news-card">
   <div class="news-image">
     <img src="{{ '/assets/img/Enhanced_delta_gamma_PAC.jpg' | relative_url }}" alt="Enhanced delta gamma PAC">
@@ -187,7 +220,6 @@ header.post-header,
   </div>
 </div>
 
-<!-- 4. ERP prediction -->
 <div class="news-card">
   <div class="news-image">
     <img src="{{ '/assets/img/ERP_prediction.jpg' | relative_url }}" alt="ERP prediction">
@@ -198,7 +230,6 @@ header.post-header,
   </div>
 </div>
 
-<!-- 5. FC network -->
 <div class="news-card">
   <div class="news-image">
     <img src="{{ '/assets/img/FC_network.jpg' | relative_url }}" alt="FC network">
