@@ -3,7 +3,12 @@ layout: about
 title: about
 permalink: /
 subtitle: M.S. candidate in Neuroscience, Seoul National University
-profile: false
+profile:
+  align: right
+  image: tg-profile.jpg
+  image_circular: false
+  more_info: >
+    <p>Seoul National University</p>
 selected_papers: true
 social: true
 
