@@ -6,7 +6,7 @@ subtitle: M.S. candidate in Neuroscience, Seoul National University
 profile:
   align: right
   image: tg-profile.jpg
-  image_circular: true
+  image_circular: False
   more_info: >
     <p>Seoul National University</p>
 selected_papers: true
@@ -20,29 +20,29 @@ latest_posts:
 ---
 <style>
 .profile {
-  max-width: 180px !important;
-  width: 180px !important;
+  max-width: 160px !important;
+  width: 160px !important;
   margin-left: 1.5rem !important;
 }
 
 .profile img {
-  width: 180px !important;
-  height: 180px !important;
-  max-width: 180px !important;
+  width: 160px !important;
+  height: 160px !important;
+  max-width: 160px !important;
   object-fit: cover !important;
 }
 
 @media (max-width: 576px) {
   .profile {
-    max-width: 140px !important;
-    width: 140px !important;
+    max-width: 130px !important;
+    width: 130px !important;
     margin: 0 auto 1rem auto !important;
   }
 
   .profile img {
-    width: 140px !important;
-    height: 140px !important;
-    max-width: 140px !important;
+    width: 130px !important;
+    height: 130px !important;
+    max-width: 130px !important;
   }
 }
 </style>
