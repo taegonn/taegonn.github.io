@@ -20,36 +20,33 @@ enabled: false
 --------------
 
 <style>
-/* Profile image: smaller and cleaner */
 .profile {
-  width: 135px !important;
-  max-width: 135px !important;
-  margin: 0.15rem 0 1.2rem 2rem !important;
+  width: 130px !important;
+  max-width: 130px !important;
+  margin: 0.2rem 0 1.2rem 2rem !important;
 }
 
 .profile img,
 .profile .img-fluid {
-  width: 135px !important;
-  height: 135px !important;
-  max-width: 135px !important;
+  width: 130px !important;
+  height: 130px !important;
+  max-width: 130px !important;
   object-fit: cover !important;
   border-radius: 14px !important;
   display: block !important;
 }
 
-/* Hide empty profile info space */
 .profile .more-info {
   display: none !important;
 }
 
-/* Overall spacing */
 .post article {
   line-height: 1.75;
 }
 
 .tg-hero {
   margin-top: 0.4rem;
-  margin-bottom: 2.4rem;
+  margin-bottom: 2.5rem;
   max-width: 760px;
 }
 
@@ -68,28 +65,27 @@ enabled: false
 
 .tg-links a {
   display: inline-block;
-  padding: 0.28rem 0.65rem;
+  padding: 0.28rem 0.68rem;
   border: 1px solid var(--global-divider-color);
   border-radius: 999px;
   font-size: 0.9rem;
   text-decoration: none;
 }
 
-/* Section layout */
 .tg-section {
   margin-top: 3rem;
   margin-bottom: 2.2rem;
   clear: both;
 }
 
-.tg-section h2 {
+.tg-section-title {
   font-size: 1.35rem;
+  font-weight: 600;
   margin-bottom: 1.25rem;
-  padding-bottom: 0.35rem;
+  padding-bottom: 0.4rem;
   border-bottom: 1px solid var(--global-divider-color);
 }
 
-/* Research cards */
 .tg-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
@@ -103,34 +99,33 @@ enabled: false
   background: var(--global-bg-color);
 }
 
-.tg-card h3 {
+.tg-card-title {
   font-size: 1rem;
-  margin-top: 0;
+  font-weight: 600;
   margin-bottom: 0.55rem;
 }
 
-.tg-card p {
+.tg-card-text {
   font-size: 0.94rem;
   line-height: 1.65;
   margin-bottom: 0;
 }
 
-/* CV-style rows */
 .tg-list {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.15rem;
 }
 
 .tg-row {
   border-left: 3px solid var(--global-theme-color);
-  padding: 0.2rem 0 0.2rem 1rem;
+  padding: 0.15rem 0 0.15rem 1rem;
 }
 
 .tg-row-title {
   font-weight: 600;
   font-size: 1.02rem;
-  margin-bottom: 0.1rem;
+  margin-bottom: 0.15rem;
 }
 
 .tg-row-meta {
@@ -144,20 +139,19 @@ enabled: false
   line-height: 1.65;
 }
 
-/* Mobile */
 @media (max-width: 576px) {
   .profile {
-    width: 110px !important;
-    max-width: 110px !important;
+    width: 105px !important;
+    max-width: 105px !important;
     margin: 0 auto 1.2rem auto !important;
     float: none !important;
   }
 
   .profile img,
   .profile .img-fluid {
-    width: 110px !important;
-    height: 110px !important;
-    max-width: 110px !important;
+    width: 105px !important;
+    height: 105px !important;
+    max-width: 105px !important;
   }
 
   .tg-hero p {
@@ -184,29 +178,29 @@ enabled: false
 </div>
 
 <div class="tg-section">
-  <h2>Research focus</h2>
+  <div class="tg-section-title">Research focus</div>
 
   <div class="tg-grid">
     <div class="tg-card">
-      <h3>Medical AI</h3>
-      <p>
+      <div class="tg-card-title">Medical AI</div>
+      <div class="tg-card-text">
         Disease progression modeling for Parkinson's disease, isolated REM sleep behavior disorder, and related neurodegenerative diseases.
-      </p>
+      </div>
     </div>
 
 ```
 <div class="tg-card">
-  <h3>Sleep and biosignals</h3>
-  <p>
+  <div class="tg-card-title">Sleep and biosignals</div>
+  <div class="tg-card-text">
     Quantitative biomarkers from PSG, EEG, EMG, sleep physiology, and clinical neurophysiology data.
-  </p>
+  </div>
 </div>
 
 <div class="tg-card">
-  <h3>Clinical prediction</h3>
-  <p>
+  <div class="tg-card-title">Clinical prediction</div>
+  <div class="tg-card-text">
     Survival modeling, heterogeneity analysis, and longitudinal modeling for prodromal neurodegenerative disease.
-  </p>
+  </div>
 </div>
 ```
 
@@ -214,7 +208,7 @@ enabled: false
 </div>
 
 <div class="tg-section">
-  <h2>Education</h2>
+  <div class="tg-section-title">Education</div>
 
   <div class="tg-list">
     <div class="tg-row">
@@ -235,7 +229,7 @@ enabled: false
 </div>
 
 <div class="tg-section">
-  <h2>Selected experience</h2>
+  <div class="tg-section-title">Selected experience</div>
 
   <div class="tg-list">
     <div class="tg-row">
