@@ -157,7 +157,7 @@ header.post-header,
 <!-- 1. Basal EMG amplitude -->
 <div class="news-card">
   <div class="news-image">
-    <img src="{{ '/assets/img/Basal_EMG_amplitude.png' | relative_url }}" alt="Basal EMG amplitude">
+    <img src="{{ '/assets/img/Basal_EMG_amplitude.jpg' | relative_url }}" alt="Basal EMG amplitude">
   </div>
   <div class="news-content">
     <div class="news-title">Basal electromyographic amplitude in rapid eye movement (REM) and non-rapid eye movement (NREM) sleep as a predictor of disease progression in isolated REM sleep behavior disorder</div>
@@ -168,7 +168,7 @@ header.post-header,
 <!-- 2. Continuous RWA -->
 <div class="news-card">
   <div class="news-image">
-    <img src="{{ '/assets/img/Continuous_RWA.png' | relative_url }}" alt="Continuous RWA">
+    <img src="{{ '/assets/img/Continuous_RWA.jpg' | relative_url }}" alt="Continuous RWA">
   </div>
   <div class="news-content">
     <div class="news-title">Continuous REM sleep without atonia quantification improves prediction of phenoconversion to α-synucleinopathies in isolated REM sleep behavior disorder</div>
@@ -179,7 +179,7 @@ header.post-header,
 <!-- 3. Enhanced delta-gamma PAC -->
 <div class="news-card">
   <div class="news-image">
-    <img src="{{ '/assets/img/Enhanced_delta_gamma_PAC.png' | relative_url }}" alt="Enhanced delta gamma PAC">
+    <img src="{{ '/assets/img/Enhanced_delta_gamma_PAC.jpg' | relative_url }}" alt="Enhanced delta gamma PAC">
   </div>
   <div class="news-content">
     <div class="news-title">Enhanced delta-gamma phase-amplitude coupling during phasic rapid eye movement sleep in isolated rapid eye movement sleep behavior disorder</div>
@@ -190,7 +190,7 @@ header.post-header,
 <!-- 4. ERP prediction -->
 <div class="news-card">
   <div class="news-image">
-    <img src="{{ '/assets/img/ERP_prediction.png' | relative_url }}" alt="ERP prediction">
+    <img src="{{ '/assets/img/ERP_prediction.jpg' | relative_url }}" alt="ERP prediction">
   </div>
   <div class="news-content">
     <div class="news-title">Prediction of phenoconversion into alpha-synucleinopathy in patients with isolated REM sleep behavior disorder using event-related potentials during visuospatial attention tasks</div>
@@ -201,7 +201,7 @@ header.post-header,
 <!-- 5. FC network -->
 <div class="news-card">
   <div class="news-image">
-    <img src="{{ '/assets/img/FC_network.png' | relative_url }}" alt="FC network">
+    <img src="{{ '/assets/img/FC_network.jpg' | relative_url }}" alt="FC network">
   </div>
   <div class="news-content">
     <div class="news-title">Altered functional brain networks in isolated REM sleep behavior disorder during phasic REM sleep</div>
