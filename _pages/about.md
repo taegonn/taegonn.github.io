@@ -7,8 +7,7 @@ profile:
   align: right
   image: tg-profile.jpg
   image_circular: False
-  more_info: >
-    <p>Seoul National University</p>
+  more_info: ""
 selected_papers: true
 social: true
 
