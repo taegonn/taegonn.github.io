@@ -33,6 +33,28 @@ latest_posts:
   object-fit: cover !important;
   border-radius: 12px !important;
 }
+
+/* Section spacing */
+.post h2 {
+margin-top: 3.8rem !important;
+margin-bottom: 1.4rem !important;
+padding-top: 0.3rem;
+}
+
+.post h2 {
+margin-top: 3.0rem !important;
+}
+
+/* Text spacing inside each section */
+.post p {
+margin-bottom: 1.15rem;
+}
+
+.post strong {
+display: inline-block;
+margin-top: 0.7rem;
+margin-bottom: 0.15rem;
+}
 </style>
 
 I am an M.S. candidate in Neuroscience at Seoul National University. My research uses machine learning, sleep physiology, medical imaging, and clinical neuroscience to model disease progression in neurodegenerative diseases.
