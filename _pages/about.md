@@ -10,6 +10,12 @@ latest_posts:
 ---
 
 <style>
+/* al-folio 테마가 자동으로 출력하는 기본 제목 숨기기 (중복 제거) */
+header.post-header, 
+.post-title {
+  display: none !important;
+}
+
 .name-title {
   text-align: center;
   font-size: 2.8rem;
@@ -82,6 +88,8 @@ latest_posts:
 .post h2 { margin-top: 3.5rem !important; margin-bottom: 1.2rem !important; }
 </style>
 
+
+<div class="name-title">Tae-Gon Noh</div>
 
 <div class="intro-container">
   <div class="intro-image">
