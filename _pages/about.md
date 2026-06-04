@@ -49,11 +49,13 @@ I am an M.S. candidate in Neuroscience at Seoul National University, advised by 
 
 [Google Scholar](https://scholar.google.com/citations?user=gZOAJD4AAAAJ&hl=en) / [ORCID](https://orcid.org/0009-0001-1388-0903) / [LinkedIn](https://www.linkedin.com/in/tae-gon-noh-778857318/) / [GitHub](https://github.com/taegonn)
 
+
 ## Research focus
 
 - Medical AI for disease progression modeling in Neurodegenerative diseases.
 - Quantitative sleep and electrophysiology biomarkers, and Medical imaging.
 - Clinical prediction, survival modeling, heterogeneity modeling, and longitudinal analysis for prodromal neurodegenerative disease.
+
 
 ## Education
 
@@ -64,6 +66,8 @@ Graduate researcher, advised by Prof. Ki-Young Jung.
 **Pusan National University**, B.S. in Biology, minor in Computer Engineering, Mar 2018 - Aug 2024
 
 Completed mandatory military service in the Republic of Korea Army, 2020 - 2022.
+
+
 
 ## Selected experience
 
