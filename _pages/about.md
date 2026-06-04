@@ -18,7 +18,34 @@ announcements:
 latest_posts:
   enabled: false
 ---
+<style>
+.profile {
+  max-width: 180px !important;
+  width: 180px !important;
+  margin-left: 1.5rem !important;
+}
 
+.profile img {
+  width: 180px !important;
+  height: 180px !important;
+  max-width: 180px !important;
+  object-fit: cover !important;
+}
+
+@media (max-width: 576px) {
+  .profile {
+    max-width: 140px !important;
+    width: 140px !important;
+    margin: 0 auto 1rem auto !important;
+  }
+
+  .profile img {
+    width: 140px !important;
+    height: 140px !important;
+    max-width: 140px !important;
+  }
+}
+</style>
 I am an M.S. candidate in Neuroscience at Seoul National University, advised by Prof. Ki-Young Jung. My research uses machine learning, sleep physiology, and clinical neuroscience to model disease progression in isolated REM sleep behavior disorder and related alpha-synucleinopathies.
 
 [Google Scholar](https://scholar.google.com/citations?user=gZOAJD4AAAAJ&hl=en) / [ORCID](https://orcid.org/0009-0001-1388-0903) / [LinkedIn](https://www.linkedin.com/in/tae-gon-noh-778857318/) / [GitHub](https://github.com/taegonn)
