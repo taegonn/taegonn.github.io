@@ -35,9 +35,11 @@ latest_posts:
 }
 </style>
 
-I am an M.S. candidate in Neuroscience at Seoul National University, advised by Prof. Ki-Young Jung. My research uses machine learning, sleep physiology, medical imaging, and clinical neuroscience to model disease progression in neurodegenerative diseases.
+I am an M.S. candidate in Neuroscience at Seoul National University. My research uses machine learning, sleep physiology, medical imaging, and clinical neuroscience to model disease progression in neurodegenerative diseases.
 
 [Google Scholar](https://scholar.google.com/citations?user=gZOAJD4AAAAJ&hl=en) · [ORCID](https://orcid.org/0009-0001-1388-0903) · [LinkedIn](https://www.linkedin.com/in/tae-gon-noh-778857318/) · [GitHub](https://github.com/taegonn)
+
+
 
 ## Research focus
 
@@ -48,7 +50,9 @@ Disease progression modeling for Parkinson's disease, isolated REM sleep behavio
 Quantitative biomarkers from PSG, EEG, EMG, sleep physiology, and clinical neurophysiology data.
 
 **Clinical prediction**  
-Survival modeling, heterogeneity analysis, and longitudinal modeling for prodromal neurodegenerative disease.
+Survival modeling, heterogeneity analysis, and longitudinal modeling for neurodegenerative disease.
+
+
 
 ## Education
 
@@ -60,12 +64,12 @@ Graduate researcher, advised by Prof. Ki-Young Jung.
 B.S. in Biology, minor in Computer Engineering, Mar 2018 – Aug 2024  
 Completed mandatory military service in the Republic of Korea Army, 2020–2022.
 
+
+
 ## Selected experience
 
 **Graduate Researcher**  
 Seoul National University, Sep 2024 – present  
-Developing multimodal disease progression models using brain MRI, PSG, EEG, EMG, and clinical data.
 
 **Research Intern**  
 Seoul National University Hospital, Jan 2023 – Aug 2024  
-Worked on data-driven quantification of sleep and electrophysiological biomarkers in neurodegenerative disease.
