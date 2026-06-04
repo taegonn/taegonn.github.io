@@ -1,77 +1,256 @@
 ---
+
 layout: about
 title: about
 permalink: /
 subtitle: M.S. candidate in Neuroscience, Seoul National University
 profile:
-  align: right
-  image: tg-profile.jpg
-  image_circular: false
-  more_info: ""
+align: right
+image: tg-profile.jpg
+image_circular: false
+more_info: ""
 selected_papers: true
 social: true
 
 announcements:
-  enabled: false
+enabled: false
 
 latest_posts:
-  enabled: false
----
+enabled: false
+--------------
+
 <style>
+/* Profile image: smaller and cleaner */
 .profile {
-  max-width: 160px !important;
-  width: 160px !important;
-  margin-left: 1.5rem !important;
+  width: 135px !important;
+  max-width: 135px !important;
+  margin: 0.15rem 0 1.2rem 2rem !important;
 }
 
-.profile img {
-  width: 160px !important;
-  height: 160px !important;
-  max-width: 160px !important;
+.profile img,
+.profile .img-fluid {
+  width: 135px !important;
+  height: 135px !important;
+  max-width: 135px !important;
   object-fit: cover !important;
+  border-radius: 14px !important;
+  display: block !important;
 }
 
+/* Hide empty profile info space */
+.profile .more-info {
+  display: none !important;
+}
+
+/* Overall spacing */
+.post article {
+  line-height: 1.75;
+}
+
+.tg-hero {
+  margin-top: 0.4rem;
+  margin-bottom: 2.4rem;
+  max-width: 760px;
+}
+
+.tg-hero p {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  margin-bottom: 1.1rem;
+}
+
+.tg-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 1.1rem;
+}
+
+.tg-links a {
+  display: inline-block;
+  padding: 0.28rem 0.65rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 999px;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+/* Section layout */
+.tg-section {
+  margin-top: 3rem;
+  margin-bottom: 2.2rem;
+  clear: both;
+}
+
+.tg-section h2 {
+  font-size: 1.35rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+/* Research cards */
+.tg-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+  gap: 1rem;
+}
+
+.tg-card {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 14px;
+  padding: 1.05rem 1.1rem;
+  background: var(--global-bg-color);
+}
+
+.tg-card h3 {
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 0.55rem;
+}
+
+.tg-card p {
+  font-size: 0.94rem;
+  line-height: 1.65;
+  margin-bottom: 0;
+}
+
+/* CV-style rows */
+.tg-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.tg-row {
+  border-left: 3px solid var(--global-theme-color);
+  padding: 0.2rem 0 0.2rem 1rem;
+}
+
+.tg-row-title {
+  font-weight: 600;
+  font-size: 1.02rem;
+  margin-bottom: 0.1rem;
+}
+
+.tg-row-meta {
+  color: var(--global-text-color-light);
+  font-size: 0.92rem;
+  margin-bottom: 0.35rem;
+}
+
+.tg-row-desc {
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+/* Mobile */
 @media (max-width: 576px) {
   .profile {
-    max-width: 130px !important;
-    width: 130px !important;
-    margin: 0 auto 1rem auto !important;
+    width: 110px !important;
+    max-width: 110px !important;
+    margin: 0 auto 1.2rem auto !important;
+    float: none !important;
   }
 
-  .profile img {
-    width: 130px !important;
-    height: 130px !important;
-    max-width: 130px !important;
+  .profile img,
+  .profile .img-fluid {
+    width: 110px !important;
+    height: 110px !important;
+    max-width: 110px !important;
+  }
+
+  .tg-hero p {
+    font-size: 1rem;
+  }
+
+  .tg-section {
+    margin-top: 2.5rem;
   }
 }
 </style>
-I am an M.S. candidate in Neuroscience at Seoul National University, advised by Prof. Ki-Young Jung. My research uses machine learning, sleep physiology, and clinical neuroscience to model disease progression in neurodegenerative diseases.
 
-[Google Scholar](https://scholar.google.com/citations?user=gZOAJD4AAAAJ&hl=en) / [ORCID](https://orcid.org/0009-0001-1388-0903) / [LinkedIn](https://www.linkedin.com/in/tae-gon-noh-778857318/) / [GitHub](https://github.com/taegonn)
+<div class="tg-hero">
+  <p>
+    I am an M.S. candidate in Neuroscience at Seoul National University, advised by Prof. Ki-Young Jung. My research uses machine learning, sleep physiology, medical imaging, and clinical neuroscience to model disease progression in neurodegenerative diseases.
+  </p>
 
+  <div class="tg-links">
+    <a href="https://scholar.google.com/citations?user=gZOAJD4AAAAJ&hl=en">Google Scholar</a>
+    <a href="https://orcid.org/0009-0001-1388-0903">ORCID</a>
+    <a href="https://www.linkedin.com/in/tae-gon-noh-778857318/">LinkedIn</a>
+    <a href="https://github.com/taegonn">GitHub</a>
+  </div>
+</div>
 
-## Research focus
+<div class="tg-section">
+  <h2>Research focus</h2>
 
-- Medical AI for disease progression modeling in Neurodegenerative diseases.
-- Quantitative sleep and electrophysiology biomarkers, and Medical imaging.
-- Clinical prediction, survival modeling, heterogeneity modeling, and longitudinal analysis for prodromal neurodegenerative disease.
+  <div class="tg-grid">
+    <div class="tg-card">
+      <h3>Medical AI</h3>
+      <p>
+        Disease progression modeling for Parkinson's disease, isolated REM sleep behavior disorder, and related neurodegenerative diseases.
+      </p>
+    </div>
 
+```
+<div class="tg-card">
+  <h3>Sleep and biosignals</h3>
+  <p>
+    Quantitative biomarkers from PSG, EEG, EMG, sleep physiology, and clinical neurophysiology data.
+  </p>
+</div>
 
-## Education
+<div class="tg-card">
+  <h3>Clinical prediction</h3>
+  <p>
+    Survival modeling, heterogeneity analysis, and longitudinal modeling for prodromal neurodegenerative disease.
+  </p>
+</div>
+```
 
-**Seoul National University**, M.S. candidate in Neuroscience, Sep 2024 - expected Aug 2026
+  </div>
+</div>
 
-Graduate researcher, advised by Prof. Ki-Young Jung.
+<div class="tg-section">
+  <h2>Education</h2>
 
-**Pusan National University**, B.S. in Biology, minor in Computer Engineering, Mar 2018 - Aug 2024
+  <div class="tg-list">
+    <div class="tg-row">
+      <div class="tg-row-title">Seoul National University</div>
+      <div class="tg-row-meta">M.S. candidate in Neuroscience, Sep 2024 – expected Aug 2026</div>
+      <div class="tg-row-desc">Graduate researcher, advised by Prof. Ki-Young Jung.</div>
+    </div>
 
-Completed mandatory military service in the Republic of Korea Army, 2020 - 2022.
+```
+<div class="tg-row">
+  <div class="tg-row-title">Pusan National University</div>
+  <div class="tg-row-meta">B.S. in Biology, minor in Computer Engineering, Mar 2018 – Aug 2024</div>
+  <div class="tg-row-desc">Completed mandatory military service in the Republic of Korea Army, 2020–2022.</div>
+</div>
+```
 
+  </div>
+</div>
 
+<div class="tg-section">
+  <h2>Selected experience</h2>
 
-## Selected experience
+  <div class="tg-list">
+    <div class="tg-row">
+      <div class="tg-row-title">Graduate Researcher</div>
+      <div class="tg-row-meta">Seoul National University, Sep 2024 – present</div>
+      <div class="tg-row-desc">Developing multimodal disease progression models using brain MRI, PSG, EEG, EMG, and clinical data.</div>
+    </div>
 
-**Graduate Researcher**, Seoul National University, Sep 2024 - present
+```
+<div class="tg-row">
+  <div class="tg-row-title">Research Intern</div>
+  <div class="tg-row-meta">Seoul National University Hospital, Jan 2023 – Aug 2024</div>
+  <div class="tg-row-desc">Worked on data-driven quantification of sleep and electrophysiological biomarkers in neurodegenerative disease.</div>
+</div>
+```
 
-**Research Intern**, Seoul National University Hospital, Jan 2023 - Aug 2024
-
+  </div>
+</div>
