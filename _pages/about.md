@@ -10,7 +10,7 @@ latest_posts:
 ---
 
 <style>
-/* al-folio 테마가 자동으로 출력하는 기본 제목 숨기기 (중복 제거) */
+/* al-folio 테마가 자동으로 출력하는 기본 제목 숨기기 */
 header.post-header, 
 .post-title {
   display: none !important;
@@ -54,38 +54,74 @@ header.post-header,
   text-align: left;
 }
 
-.cv-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  margin-bottom: 0.2rem;
-}
-
-.cv-item-title {
-  font-weight: 700;
-  font-size: 1.1rem;
-  color: #2c3e50;
-}
-
-.cv-item-date {
-  color: #6c757d;
-  font-size: 0.95rem;
-  font-weight: 500;
-  text-align: right;
-}
-
-.cv-details {
-  margin-bottom: 1.8rem;
-  color: #495057;
-  line-height: 1.4;
-}
-
 .research-keyword {
   color: #212529;
   border-bottom: 2.5px solid #a8c1d9;
 }
 
-.post h2 { margin-top: 3.5rem !important; margin-bottom: 1.2rem !important; }
+.post h2 { margin-top: 3.5rem !important; margin-bottom: 1.5rem !important; }
+
+/* 🌟 Highlights & News 카드 디자인 */
+.news-card {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  padding: 1.2rem;
+  border-radius: 12px;
+  background-color: #f8f9fa; /* 아주 연한 회색 배경 */
+  border: 1px solid #e9ecef;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.news-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+.news-image {
+  flex: 0 0 220px; /* 이미지 영역 고정 너비 */
+  display: flex;
+  align-items: center;
+}
+
+.news-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+}
+
+.news-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.news-title {
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: #2c3e50;
+  margin-bottom: 0.3rem;
+}
+
+.news-meta {
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin-bottom: 0.8rem;
+}
+
+.news-desc {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #495057;
+}
+
+/* 모바일 화면에서는 카드 이미지가 위로 가도록 변경 */
+@media (max-width: 768px) {
+  .news-card { flex-direction: column; }
+  .news-image { flex: auto; width: 100%; }
+}
 </style>
 
 
@@ -118,41 +154,33 @@ header.post-header,
 </ul>
 
 
-## Education
+## Highlights & Selected Works
 
-<div class="cv-item">
-  <div class="cv-item-title">Seoul National University</div>
-  <div class="cv-item-date">Sep 2024 – Aug 2026 (Expected)</div>
-</div>
-<div class="cv-details">
-  M.S. candidate in Neuroscience<br>
-  <em>Graduate researcher, advised by Prof. Ki-Young Jung.</em>
-</div>
-
-<div class="cv-item">
-  <div class="cv-item-title">Pusan National University</div>
-  <div class="cv-item-date">Mar 2018 – Aug 2024</div>
-</div>
-<div class="cv-details">
-  B.S. in Biology, minor in Computer Engineering<br>
-  <span style="font-size: 0.9rem; color: #6c757d;">Completed mandatory military service in the Republic of Korea Army (2020–2022).</span>
+<!-- 첫 번째 뉴스/논문 카드 -->
+<div class="news-card">
+  <div class="news-image">
+    <!-- assets/img 폴더에 abstract 이미지를 넣고 파일명을 아래에 맞춰주세요 -->
+    <img src="{{ '/assets/img/abstract-1.jpg' | relative_url }}" alt="Graphical Abstract">
+  </div>
+  <div class="news-content">
+    <div class="news-title">논문 제목 또는 하이라이트 타이틀 입력</div>
+    <div class="news-meta">Published in <em>Journal Name</em> (2024)</div>
+    <div class="news-desc">
+      이곳에 해당 연구의 Graphical Abstract에 대한 설명이나 핵심 발견(Key findings)을 간략하게 적습니다. 2~3문장으로 요약하여 방문자가 직관적으로 연구 내용을 파악할 수 있게 유도하세요.
+    </div>
+  </div>
 </div>
 
-
-## Selected Experience
-
-<div class="cv-item">
-  <div class="cv-item-title">Graduate Researcher</div>
-  <div class="cv-item-date">Sep 2024 – Present</div>
-</div>
-<div class="cv-details">
-  Seoul National University
-</div>
-
-<div class="cv-item">
-  <div class="cv-item-title">Research Intern</div>
-  <div class="cv-item-date">Jan 2023 – Aug 2024</div>
-</div>
-<div class="cv-details">
-  Seoul National University Hospital
+<!-- 두 번째 뉴스/논문 카드 -->
+<div class="news-card">
+  <div class="news-image">
+    <img src="{{ '/assets/img/abstract-2.jpg' | relative_url }}" alt="Graphical Abstract">
+  </div>
+  <div class="news-content">
+    <div class="news-title">두 번째 프로젝트 또는 학회 발표 내용</div>
+    <div class="news-meta">Presented at <em>Conference Name</em> (2023)</div>
+    <div class="news-desc">
+      학회에서 발표한 포스터의 일부분이나 프로젝트의 파이프라인 이미지를 넣고, 어떤 문제를 어떤 모델로 해결했는지 어필할 수 있습니다.
+    </div>
+  </div>
 </div>
