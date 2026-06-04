@@ -83,8 +83,6 @@ latest_posts:
 </style>
 
 
-<div class="name-title">Tae-Gon Noh</div>
-
 <div class="intro-container">
   <div class="intro-image">
     <img src="{{ '/assets/img/tg-profile.jpg' | relative_url }}" alt="Tae-Gon Noh">
