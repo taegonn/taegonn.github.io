@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <span style='font-weight: 600;'>M.S. candidate in Neuroscience</span>, Seoul National University
+subtitle: "<span style='font-weight: 600;'>M.S. candidate in Neuroscience</span>, Seoul National University"
 profile:
   align: right
   image: tg-profile.jpg
@@ -17,7 +17,6 @@ latest_posts:
 ---
 
 <style>
-/* 1. 프로필 사진 디자인 개선: 크기를 약간 키우고 부드러운 그림자 추가 */
 .profile {
   width: 160px !important;
   max-width: 160px !important;
@@ -31,13 +30,13 @@ latest_posts:
   height: 160px !important;
   max-width: 160px !important;
   object-fit: cover !important;
-  border-radius: 50% !important; 
-  box-shadow: 0 4px 14px rgba(0,0,0,0.12); 
+  border-radius: 50% !important;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.12);
 }
 
 .cv-item {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: baseline;
   margin-bottom: 0.2rem;
 }
@@ -45,7 +44,7 @@ latest_posts:
 .cv-item-title {
   font-weight: 700;
   font-size: 1.1rem;
-  color: #2c3e50; 
+  color: #2c3e50;
 }
 
 .cv-item-date {
@@ -63,7 +62,7 @@ latest_posts:
 
 .research-keyword {
   color: #212529;
-  border-bottom: 2.5px solid #a8c1d9; 
+  border-bottom: 2.5px solid #a8c1d9;
 }
 
 .post h2 { margin-top: 3.5rem !important; margin-bottom: 1.2rem !important; }
