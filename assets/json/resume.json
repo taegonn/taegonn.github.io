@@ -180,7 +180,14 @@
     },
     {
       "name": "Machine Learning",
-      "keywords": ["PyTorch", "scikit-learn", "variational autoencoders", "contrastive VAEs", "representation learning", "foundation model-based medical AI"]
+      "keywords": [
+        "PyTorch",
+        "scikit-learn",
+        "variational autoencoders",
+        "contrastive VAEs",
+        "representation learning",
+        "foundation model-based medical AI"
+      ]
     },
     {
       "name": "Signal Processing and Sleep Analysis",

@@ -214,6 +214,7 @@ html[data-theme='dark'] .news-image img {
       <a href="https://www.linkedin.com/in/tae-gon-noh-778857318/" style="margin-right: 15px; color: #0077B5; text-decoration: none;">💼 LinkedIn</a>
       <a href="https://github.com/taegonn" class="github-link">🐙 GitHub</a>
     </div>
+
   </div>
 </div>
 
