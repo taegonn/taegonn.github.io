@@ -1,0 +1,25 @@
+- image: Basal_EMG_amplitude.jpg
+  alt: Basal EMG amplitude
+  title: Basal electromyographic amplitude in rapid eye movement (REM) and non-rapid eye movement (NREM) sleep as a predictor of disease progression in isolated REM sleep behavior disorder
+  meta: TG Noh, JI Byun, EK St. Louis, KY Jung. Published in Sleep (2026)
+  url: https://doi.org/10.1093/sleep/zsaf415
+- image: Continuous_RWA.jpg
+  alt: Continuous RWA
+  title: Continuous REM sleep without atonia quantification improves prediction of phenoconversion to alpha-synucleinopathies in isolated REM sleep behavior disorder
+  meta: TG Noh, S Lee, Y Lee, N Kim, DS Shin, JH Shin, JI Byun, HJ Kim, KY Jung. Published in Sleep Medicine (2025)
+  url: https://doi.org/10.1016/j.sleep.2025.03.013
+- image: Enhanced_delta_gamma_PAC.jpg
+  alt: Enhanced delta gamma PAC
+  title: Enhanced delta-gamma phase-amplitude coupling during phasic rapid eye movement sleep in isolated rapid eye movement sleep behavior disorder
+  meta: TG Noh, KM Choi, JS Jun, JW Shin, JI Byun, JS Sunwoo, KY Jung. Published in Sleep (2025)
+  url: https://doi.org/10.1093/sleep/zsae258
+- image: ERP_prediction.jpg
+  alt: ERP prediction
+  title: Prediction of phenoconversion into alpha-synucleinopathy in patients with isolated REM sleep behavior disorder using event-related potentials during visuospatial attention tasks
+  meta: KM Choi, KS Cha, TG Noh, S Lee, YW Shin, JI Byun, JS Jun, JH Shin, et al. Published in Sleep (2025)
+  url: https://doi.org/10.1093/sleep/zsae308
+- image: FC_network.jpg
+  alt: FC network
+  title: Altered functional brain networks in isolated REM sleep behavior disorder during phasic REM sleep
+  meta: KM Choi, TG Noh, JS Sunwoo, JI Byun, KY Jung. Published in Sleep Medicine (2025)
+  url: https://doi.org/10.1016/j.sleep.2025.106724

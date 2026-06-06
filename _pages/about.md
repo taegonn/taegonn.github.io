@@ -10,7 +10,7 @@ latest_posts:
 ---
 
 <style>
-header.post-header, 
+header.post-header,
 .post-title {
   display: none !important;
 }
@@ -53,7 +53,6 @@ header.post-header,
   text-align: left;
 }
 
-/* 깃허브 링크 다크모드 대응을 위한 클래스 */
 .github-link {
   color: #333;
   text-decoration: none;
@@ -64,23 +63,42 @@ header.post-header,
   border-bottom: 2.5px solid #a8c1d9;
 }
 
-.post h2 { margin-top: 3.5rem !important; margin-bottom: 1.5rem !important; }
+.post h2 {
+  margin-top: 3.5rem !important;
+  margin-bottom: 1.5rem !important;
+}
 
-/* 🌟 Highlights & News 카드 디자인 */
+.highlights-feed {
+  max-height: 34rem;
+  overflow-y: auto;
+  padding-right: 0.75rem;
+  scroll-snap-type: y proximity;
+}
+
+.highlights-feed:focus {
+  outline: 2px solid var(--global-theme-color, #2563eb);
+  outline-offset: 3px;
+}
+
 .news-card {
   display: flex;
   gap: 1.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   padding: 1.2rem;
-  border-radius: 12px;
+  border-radius: 8px;
   background-color: #f8f9fa;
   border: 1px solid #e9ecef;
+  scroll-snap-align: start;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .news-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+.news-card:last-child {
+  margin-bottom: 0;
 }
 
 .news-image {
@@ -92,7 +110,7 @@ header.post-header,
 .news-image img {
   width: 100%;
   height: auto;
-  border-radius: 8px;
+  border-radius: 6px;
   border: 1px solid #dee2e6;
 }
 
@@ -110,20 +128,37 @@ header.post-header,
   margin-bottom: 0.3rem;
 }
 
+.news-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.news-title a:hover {
+  color: var(--global-theme-color, #2563eb);
+}
+
 .news-meta {
   font-size: 0.9rem;
   color: #6c757d;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0;
 }
 
 @media (max-width: 768px) {
-  .news-card { flex-direction: column; }
-  .news-image { flex: auto; width: 100%; }
+  .highlights-feed {
+    max-height: 31rem;
+    padding-right: 0.35rem;
+  }
+
+  .news-card {
+    flex-direction: column;
+  }
+
+  .news-image {
+    flex: auto;
+    width: 100%;
+  }
 }
 
-/* ==========================================
-   🌙 테마별 다크모드 (Dark Mode) 완벽 대응 오버라이드
-   ========================================== */
 html[data-theme='dark'] .name-title {
   color: #f8f9fa !important;
 }
@@ -150,6 +185,10 @@ html[data-theme='dark'] .news-title {
   color: #f8f9fa !important;
 }
 
+html[data-theme='dark'] .news-title a:hover {
+  color: var(--global-theme-color, #8ab4f8) !important;
+}
+
 html[data-theme='dark'] .news-meta {
   color: #a0aab2 !important;
 }
@@ -158,7 +197,6 @@ html[data-theme='dark'] .news-image img {
   border: 1px solid #3a3a3c !important;
 }
 </style>
-
 
 <div class="name-title">Tae-Gon Noh</div>
 
@@ -169,7 +207,7 @@ html[data-theme='dark'] .news-image img {
   <div class="intro-text">
     <span style="font-weight: 600; font-size: 1.15rem;">M.S. candidate in Neuroscience</span>, Seoul National University<br><br>
     My research uses <strong>machine learning, sleep physiology, medical imaging,</strong> and <strong>clinical neuroscience</strong> to model disease progression in neurodegenerative diseases.
-    
+
     <div style="margin-top: 1.2rem; font-weight: 500; font-size: 0.95rem;">
       <a href="https://scholar.google.com/citations?user=gZOAJD4AAAAJ&hl=en" style="margin-right: 15px; color: #4285F4; text-decoration: none;">🎓 Google Scholar</a>
       <a href="https://orcid.org/0009-0001-1388-0903" style="margin-right: 15px; color: #A6CE39; text-decoration: none;">iD ORCID</a>
@@ -179,7 +217,6 @@ html[data-theme='dark'] .news-image img {
   </div>
 </div>
 
-
 ## Research Focus
 
 <ul>
@@ -188,54 +225,24 @@ html[data-theme='dark'] .news-image img {
   <li style="margin-bottom: 0.5rem;"><strong class="research-keyword">Clinical prediction:</strong> Survival modeling, heterogeneity analysis, and longitudinal modeling for neurodegenerative disease.</li>
 </ul>
 
-
 ## Highlights & Selected Works
-<div class="news-card">
-  <div class="news-image">
-    <img src="{{ '/assets/img/Basal_EMG_amplitude.jpg' | relative_url }}" alt="Basal EMG amplitude">
-  </div>
-  <div class="news-content">
-    <div class="news-title">Basal electromyographic amplitude in rapid eye movement (REM) and non-rapid eye movement (NREM) sleep as a predictor of disease progression in isolated REM sleep behavior disorder</div>
-    <div class="news-meta">TG Noh, JI Byun, EK St. Louis, KY Jung.<br>Published in <em>SLEEPJ</em> (2026)</div>
-  </div>
-</div>
 
-<div class="news-card">
-  <div class="news-image">
-    <img src="{{ '/assets/img/Continuous_RWA.jpg' | relative_url }}" alt="Continuous RWA">
-  </div>
-  <div class="news-content">
-    <div class="news-title">Continuous REM sleep without atonia quantification improves prediction of phenoconversion to α-synucleinopathies in isolated REM sleep behavior disorder</div>
-    <div class="news-meta">TG Noh, S Lee, Y Lee, N Kim, DS Shin, JH Shin, JI Byun, HJ Kim, KY Jung.<br>Published in <em>Sleep Medicine</em> (2025)</div>
-  </div>
-</div>
-
-<div class="news-card">
-  <div class="news-image">
-    <img src="{{ '/assets/img/Enhanced_delta_gamma_PAC.jpg' | relative_url }}" alt="Enhanced delta gamma PAC">
-  </div>
-  <div class="news-content">
-    <div class="news-title">Enhanced delta-gamma phase-amplitude coupling during phasic rapid eye movement sleep in isolated rapid eye movement sleep behavior disorder</div>
-    <div class="news-meta">TG Noh, KM Choi, JS Jun, JW Shin, JI Byun, JS Sunwoo, KY Jung.<br>Published in <em>Sleep</em> (2025)</div>
-  </div>
-</div>
-
-<div class="news-card">
-  <div class="news-image">
-    <img src="{{ '/assets/img/ERP_prediction.jpg' | relative_url }}" alt="ERP prediction">
-  </div>
-  <div class="news-content">
-    <div class="news-title">Prediction of phenoconversion into alpha-synucleinopathy in patients with isolated REM sleep behavior disorder using event-related potentials during visuospatial attention tasks</div>
-    <div class="news-meta">KM Choi, KS Cha, TG Noh, S Lee, YW Shin, JI Byun, JS Jun, JH Shin, ...<br>Published in <em>Sleep</em> (2025)</div>
-  </div>
-</div>
-
-<div class="news-card">
-  <div class="news-image">
-    <img src="{{ '/assets/img/FC_network.jpg' | relative_url }}" alt="FC network">
-  </div>
-  <div class="news-content">
-    <div class="news-title">Altered functional brain networks in isolated REM sleep behavior disorder during phasic REM sleep</div>
-    <div class="news-meta">KM Choi, TG Noh, JS Sunwoo, JI Byun, KY Jung.<br>Published in <em>Sleep Medicine</em> (2025)</div>
-  </div>
+<div class="highlights-feed" tabindex="0">
+  {% for item in site.data.highlights %}
+    <article class="news-card">
+      <div class="news-image">
+        <img src="{{ item.image | prepend: '/assets/img/' | relative_url }}" alt="{{ item.alt }}">
+      </div>
+      <div class="news-content">
+        <div class="news-title">
+          {% if item.url %}
+            <a href="{{ item.url }}">{{ item.title }}</a>
+          {% else %}
+            {{ item.title }}
+          {% endif %}
+        </div>
+        <div class="news-meta">{{ item.meta }}</div>
+      </div>
+    </article>
+  {% endfor %}
 </div>

@@ -1,11 +1,9 @@
 cv:
   name: Tae-Gon Noh
-  label: M.S. candidate in Neuroscience
+  headline: M.S. candidate in Neuroscience
   email: ghgh3110@snu.ac.kr
   location: Seoul, South Korea
-  image: tg-profile.jpg
-  summary: M.S. candidate at Seoul National University studying medical AI, sleep physiology, and biomarkers for neurodegenerative disease progression.
-
+  website: https://taegonn.github.io
   social_networks:
     - network: Google Scholar
       username: gZOAJD4AAAAJ
@@ -17,28 +15,35 @@ cv:
       username: tae-gon-noh-778857318
 
   sections:
+    Summary:
+      - M.S. candidate at Seoul National University studying medical AI, sleep physiology, and multimodal biomarkers for neurodegenerative disease progression.
+
     Education:
       - institution: Seoul National University
         location: Seoul, South Korea
         area: Neuroscience
-        studyType: M.S. candidate
+        degree: M.S. candidate
         start_date: 2024-09
-        end_date: Expected 2026-08
-        score: "GPA: 3.56/4.0"
+        end_date: 2026-08
+        highlights:
+          - "GPA: 3.56/4.0"
+          - "Advisor: Prof. Ki-Young Jung"
       - institution: Pusan National University
         location: Busan, South Korea
         area: Biology major, Computer Engineering minor
-        studyType: B.S.
+        degree: B.S.
         start_date: 2018-03
         end_date: 2024-08
-        score: "GPA: 3.57/4.5"
+        highlights:
+          - "GPA: 3.57/4.5"
+          - "Mandatory military service, Republic of Korea Army, 2020-2022"
 
-    Experience:
+    Research Experience:
       - company: Seoul National University
         position: Graduate Researcher
         location: Seoul, South Korea
         start_date: 2024-09
-        end_date: Present
+        end_date: present
         summary: "Advisor: Prof. Ki-Young Jung."
         highlights:
           - Foundation model-based disease progression modeling using brain MRI and PSG.
@@ -52,75 +57,198 @@ cv:
         highlights:
           - Data-driven quantification of sleep and electrophysiological markers in isolated REM sleep behavior disorder.
 
-    Awards:
-      - title: Paper Award
-        date: 2025-12
-        awarder: Seoul National University
-      - title: Award for Oral Presentation
-        date: 2025-07
-        awarder: Korean Sleep Research Society
-      - title: Paper Award
-        date: 2024-12
-        awarder: Seoul National University
-      - title: Grand Award for Poster Presentation
-        date: 2024-07
-        awarder: Korean Society of Sleep Medicine
-      - title: Award for Poster Presentation
-        date: 2023-11
-        awarder: Korean Sleep Research Society
-      - title: Award for Poster Presentation
-        date: 2023-07
-        awarder: Korean Society of Sleep Medicine
-      - title: 2nd Award for CANSAT Korea
-        date: 2020-08
-        awarder: Korea Advanced Institute of Science and Technology
+    Research Focus:
+      - bullet: Foundation model-based medical AI for disease progression modeling in Parkinson's disease and isolated REM sleep behavior disorder.
+      - bullet: Quantitative sleep and electrophysiology biomarkers from PSG, EEG, EMG, EOG, ECG, brain MRI, and clinical data.
+      - bullet: Survival modeling, heterogeneity modeling, longitudinal analysis, and clinical prediction in prodromal neurodegenerative disease.
 
-    Publications:
+    Peer-reviewed Papers:
       - title: Clinical, behavioral, and physiological characteristics of isolated rapid eye movement sleep behavior disorder patients with ambulatory dream enactment behaviors
-        publisher: Sleep Medicine
-        releaseDate: 2026
-        url: https://doi.org/10.1016/j.sleep.2026.108968
+        authors:
+          - Kim SM
+          - "**Noh TG**"
+          - Byun JI
+          - Sunwoo JS
+          - Shin JW
+          - Kim TJ
+          - Jun JS
+          - Schenck CH
+          - Jung KY
+        journal: "Sleep Medicine, 144, 108968"
+        date: "2026"
+        doi: 10.1016/j.sleep.2026.108968
       - title: Clinical, Physiological, and Behavioral Characteristics of iRBD Patients With Ambulatory Dream Enactment Behaviors
-        publisher: Sleep Medicine
-        releaseDate: 2026
-        url: https://doi.org/10.1016/j.sleep.2025.107850
+        authors:
+          - Kim SM
+          - "**Noh TG**"
+          - Han SJ
+          - et al.
+        journal: "Sleep Medicine, 138, 107850"
+        date: "2026"
+        doi: 10.1016/j.sleep.2025.107850
       - title: Basal electromyographic amplitude in REM and NREM sleep as a predictor of disease progression in isolated REM sleep behavior disorder
-        publisher: Sleep
-        releaseDate: 2026
-        url: https://doi.org/10.1093/sleep/zsaf415
+        authors:
+          - "**Noh TG**"
+          - St. Louis EK
+          - Jung KY
+          - et al.
+        journal: "Sleep, 49(4), zsaf415"
+        date: "2026"
+        doi: 10.1093/sleep/zsaf415
       - title: Diagnostic cutoffs of REM sleep without atonia for identifying isolated REM sleep behavior disorder in a Korean population
-        publisher: Sleep Medicine
-        releaseDate: 2026
-        url: https://doi.org/10.1016/j.sleep.2026.108811
+        authors:
+          - "**Noh TG**"
+          - Byun JI
+          - Hong JK
+          - Yoon IY
+          - Jung KY
+        journal: "Sleep Medicine, 140, 108811"
+        date: "2026"
+        doi: 10.1016/j.sleep.2026.108811
       - title: Altered functional brain networks in isolated REM sleep behavior disorder during phasic REM sleep
-        publisher: Sleep Medicine
-        releaseDate: 2025
-        url: https://doi.org/10.1016/j.sleep.2025.106724
+        authors:
+          - Choi KM
+          - "**Noh TG**"
+          - Sunwoo JS
+          - Byun JI
+          - Jung KY
+        journal: "Sleep Medicine, 134, 106724"
+        date: "2025"
+        doi: 10.1016/j.sleep.2025.106724
       - title: Eye blinking characteristics as potential biomarkers in isolated REM sleep behavior disorder during visuospatial attention tasks
-        publisher: Parkinsonism & Related Disorders
-        releaseDate: 2025
-        url: https://doi.org/10.1016/j.parkreldis.2025.107956
+        authors:
+          - Kim SM
+          - Choi KM
+          - "**Noh TG**"
+          - Kim TJ
+          - Jun JS
+          - Byun JI
+          - Sunwoo JS
+          - Shin JW
+          - et al.
+        journal: "Parkinsonism & Related Disorders, 138, 107956"
+        date: "2025"
+        doi: 10.1016/j.parkreldis.2025.107956
       - title: Continuous REM sleep without atonia quantification improves prediction of phenoconversion to alpha-synucleinopathies in isolated REM sleep behavior disorder
-        publisher: Sleep Medicine
-        releaseDate: 2025
-        url: https://doi.org/10.1016/j.sleep.2025.03.013
+        authors:
+          - "**Noh TG**"
+          - Lee S
+          - Lee Y
+          - Kim N
+          - Shin DS
+          - Shin JH
+          - Byun JI
+          - Kim HJ
+          - Jung KY
+        journal: "Sleep Medicine, 129, 394-401"
+        date: "2025"
+        doi: 10.1016/j.sleep.2025.03.013
       - title: Enhanced delta-gamma phase-amplitude coupling during phasic rapid eye movement sleep in isolated rapid eye movement sleep behavior disorder
-        publisher: Sleep
-        releaseDate: 2025
-        url: https://doi.org/10.1093/sleep/zsae258
+        authors:
+          - "**Noh TG**"
+          - Choi KM
+          - Jun JS
+          - Shin JW
+          - Byun JI
+          - Sunwoo JS
+          - Jung KY
+        journal: "Sleep, 48(4), zsae258"
+        date: "2025"
+        doi: 10.1093/sleep/zsae258
       - title: Prediction of phenoconversion into alpha-synucleinopathy in patients with isolated REM sleep behavior disorder using event-related potentials during visuospatial attention tasks
-        publisher: Sleep
-        releaseDate: 2025
-        url: https://doi.org/10.1093/sleep/zsae308
+        authors:
+          - Choi KM
+          - Cha KS
+          - "**Noh TG**"
+          - Lee S
+          - Shin YW
+          - Byun JI
+          - Jun JS
+          - Shin JH
+          - et al.
+        journal: "Sleep, 48(3), zsae308"
+        date: "2025"
+        doi: 10.1093/sleep/zsae308
+
+    Conference Papers:
+      - title: Independent Contributions of Aperiodic and Periodic EEG Features as Prognostic Biomarkers for Phenoconversion to Alpha-Synucleinopathies in iRBD
+        authors:
+          - Lee EG
+          - "**Noh TG**"
+          - Jung KY
+        journal: "Sleep, 49(Suppl 1), A358"
+        date: "2026"
+        doi: 10.1093/sleep/zsag091.0799
+      - title: Resting-State EEG Subtype and Stage Inference Identifies Distinct Prodromal Biotypes and Staging in iRBD
+        authors:
+          - Shin JW
+          - Yook SH
+          - "**Noh TG**"
+          - Bae S
+          - Jung KY
+          - Kim H
+        journal: "Sleep, 49(Suppl 1), A357-A358"
+        date: "2026"
+        doi: 10.1093/sleep/zsag091.0798
+      - title: Increased phase amplitude coupling during phasic REM sleep in isolated REM sleep behavior disorder
+        authors:
+          - Jung KY
+          - "**Noh TG**"
+          - Han SJ
+          - et al.
+        journal: "Journal of Sleep Research, 33(Suppl 1)"
+        date: "2024"
+        url: https://onlinelibrary.wiley.com/doi/full/10.1111/jsr.14291
+      - title: Increased delta-gamma coupling during phasic REM sleep in isolated RBD
+        authors:
+          - "**Noh TG**"
+          - Lee Y
+          - Kim EY
+          - Sunwoo JS
+          - Jung KY
+        journal: "Sleep, 47(Suppl 1), A447-A448"
+        date: "2024"
+        doi: 10.1093/sleep/zsae067.01041
+
+    Awards:
+      - name: Paper Award
+        date: "2025-12"
+        summary: Seoul National University
+      - name: Award for Oral Presentation
+        date: "2025-07"
+        summary: Korean Sleep Research Society
+      - name: Paper Award
+        date: "2024-12"
+        summary: Seoul National University
+      - name: Grand Award for Poster Presentation
+        date: "2024-07"
+        summary: Korean Society of Sleep Medicine
+      - name: Award for Poster Presentation
+        date: "2023-11"
+        summary: Korean Sleep Research Society
+      - name: Award for Poster Presentation
+        date: "2023-07"
+        summary: Korean Society of Sleep Medicine
+      - name: 2nd Award for CANSAT Korea
+        date: "2020-08"
+        summary: Korea Advanced Institute of Science and Technology
+
+    Professional Memberships:
+      - bullet: American Academy of Sleep Medicine, student member, Dec 2023-present.
+      - bullet: Korean Sleep Research Society, student member, Mar 2023-present.
+      - bullet: Korean Society of Sleep Medicine, student member, Mar 2023-present.
+      - bullet: Korean EEG Study Group, student member, Feb 2023-present.
 
     Skills:
-      - name: Programming
-        keywords: Python, MATLAB, C/C++, Linux
-      - name: Machine Learning
-        keywords: PyTorch, scikit-learn, representation learning, foundation model-based medical AI
-      - name: Signal Processing and Sleep Analysis
-        keywords: PSG, EEG, EOG, EMG, ECG, audio signal analysis, connectivity analysis, time-frequency analysis
-      - name: Neuroimaging
-        keywords: Brain MRI preprocessing, NIfTI processing, atlas-based regional analysis
-      - name: Biostatistics and Clinical Data Analysis
-        keywords: Regression modeling, survival analysis, longitudinal analysis, clinical prediction modeling
+      - label: Programming
+        details: Python, MATLAB, C/C++, Linux
+      - label: Machine Learning
+        details: PyTorch, scikit-learn, variational autoencoders, contrastive VAEs, representation learning, foundation model-based medical AI
+      - label: Signal Processing and Sleep Analysis
+        details: PSG, EEG, EOG, EMG, ECG, audio signal analysis, connectivity analysis, time-frequency analysis
+      - label: Neuroimaging
+        details: Brain MRI preprocessing and analysis, NIfTI processing, atlas-based regional analysis
+      - label: Genetics and Statistical Genomics
+        details: Polygenic risk score construction and analysis, GWAS summary statistics analysis, Mendelian randomization
+      - label: Biostatistics and Clinical Data Analysis
+        details: Regression modeling, survival analysis, longitudinal analysis, clinical prediction modeling
