@@ -121,10 +121,6 @@ description: Compact curriculum vitae for graduate application review.
     <div>
       <p class="tg-cv-title">Graduate Researcher, Seoul National University</p>
       <p class="tg-cv-meta">Advisor: Prof. Ki-Young Jung</p>
-      <ul class="tg-cv-list">
-        <li>Foundation model-based disease progression modeling using brain MRI and PSG.</li>
-        <li>Multimodal biomarkers for Parkinson's disease and isolated REM sleep behavior disorder.</li>
-      </ul>
     </div>
   </div>
   <div class="tg-cv-item">
@@ -132,9 +128,6 @@ description: Compact curriculum vitae for graduate application review.
     <div>
       <p class="tg-cv-title">Research Intern, Seoul National University Hospital</p>
       <p class="tg-cv-meta">Advisor: Prof. Ki-Young Jung</p>
-      <ul class="tg-cv-list">
-        <li>Data-driven quantification of sleep and electrophysiological markers in isolated REM sleep behavior disorder.</li>
-      </ul>
     </div>
   </div>
 </section>
@@ -179,19 +172,31 @@ description: Compact curriculum vitae for graduate application review.
 <section class="tg-cv-section">
   <h2>Honors & Awards</h2>
   <div class="tg-cv-item">
-    <div class="tg-cv-date">2025</div>
-    <div>Paper Award, Seoul National University; Award for Oral Presentation, Korean Sleep Research Society.</div>
+    <div class="tg-cv-date">Dec 2025</div>
+    <div>Paper Award, Seoul National University.</div>
   </div>
   <div class="tg-cv-item">
-    <div class="tg-cv-date">2024</div>
-    <div>Paper Award, Seoul National University; Grand Award for Poster Presentation, Korean Society of Sleep Medicine.</div>
+    <div class="tg-cv-date">Jul 2025</div>
+    <div>Award for Oral Presentation, Korean Sleep Research Society.</div>
   </div>
   <div class="tg-cv-item">
-    <div class="tg-cv-date">2023</div>
-    <div>Award for Poster Presentation, Korean Sleep Research Society; Award for Poster Presentation, Korean Society of Sleep Medicine.</div>
+    <div class="tg-cv-date">Dec 2024</div>
+    <div>Paper Award, Seoul National University.</div>
   </div>
   <div class="tg-cv-item">
-    <div class="tg-cv-date">2020</div>
+    <div class="tg-cv-date">Jul 2024</div>
+    <div>Grand Award for Poster Presentation, Korean Society of Sleep Medicine.</div>
+  </div>
+  <div class="tg-cv-item">
+    <div class="tg-cv-date">Nov 2023</div>
+    <div>Award for Poster Presentation, Korean Sleep Research Society.</div>
+  </div>
+  <div class="tg-cv-item">
+    <div class="tg-cv-date">Jul 2023</div>
+    <div>Award for Poster Presentation, Korean Society of Sleep Medicine.</div>
+  </div>
+  <div class="tg-cv-item">
+    <div class="tg-cv-date">Aug 2020</div>
     <div>2nd Award for CANSAT Korea, Korea Advanced Institute of Science and Technology.</div>
   </div>
 </section>

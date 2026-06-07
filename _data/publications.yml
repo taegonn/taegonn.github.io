@@ -7,14 +7,6 @@ peer_reviewed:
     pages: "108968"
     doi: 10.1016/j.sleep.2026.108968
     url: https://doi.org/10.1016/j.sleep.2026.108968
-  - title: Clinical, Physiological, and Behavioral Characteristics of iRBD Patients With Ambulatory Dream Enactment Behaviors
-    authors: Kim SM, Noh TG, Han SJ, et al
-    venue: Sleep Medicine
-    year: 2026
-    volume: "138"
-    pages: "107850"
-    doi: 10.1016/j.sleep.2025.107850
-    url: https://doi.org/10.1016/j.sleep.2025.107850
   - title: Basal electromyographic amplitude in REM and NREM sleep as a predictor of disease progression in isolated REM sleep behavior disorder
     authors: Noh TG, St. Louis EK, Jung KY, et al
     venue: Sleep
@@ -76,6 +68,14 @@ peer_reviewed:
     url: https://doi.org/10.1093/sleep/zsae308
 
 conference:
+  - title: Clinical, Physiological, and Behavioral Characteristics of iRBD Patients With Ambulatory Dream Enactment Behaviors
+    authors: Kim SM, Noh TG, Han SJ, et al
+    venue: Sleep Medicine
+    year: 2026
+    volume: "138"
+    pages: "107850"
+    doi: 10.1016/j.sleep.2025.107850
+    url: https://doi.org/10.1016/j.sleep.2025.107850
   - title: Independent Contributions of Aperiodic and Periodic EEG Features as Prognostic Biomarkers for Phenoconversion to Alpha-Synucleinopathies in iRBD
     authors: Lee EG, Noh TG, Jung KY
     venue: Sleep

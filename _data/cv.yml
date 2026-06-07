@@ -45,17 +45,12 @@ cv:
         start_date: 2024-09
         end_date: present
         summary: "Advisor: Prof. Ki-Young Jung."
-        highlights:
-          - Foundation model-based disease progression modeling using brain MRI and PSG.
-          - Multimodal biomarkers for Parkinson's disease and isolated REM sleep behavior disorder.
       - company: Seoul National University Hospital
         position: Research Intern
         location: Seoul, South Korea
         start_date: 2023-01
         end_date: 2024-08
         summary: "Advisor: Prof. Ki-Young Jung."
-        highlights:
-          - Data-driven quantification of sleep and electrophysiological markers in isolated REM sleep behavior disorder.
 
     Research Focus:
       - bullet: Foundation model-based medical AI for disease progression modeling in Parkinson's disease and isolated REM sleep behavior disorder.
@@ -77,15 +72,6 @@ cv:
         journal: "Sleep Medicine, 144, 108968"
         date: "2026"
         doi: 10.1016/j.sleep.2026.108968
-      - title: Clinical, Physiological, and Behavioral Characteristics of iRBD Patients With Ambulatory Dream Enactment Behaviors
-        authors:
-          - Kim SM
-          - "**Noh TG**"
-          - Han SJ
-          - et al
-        journal: "Sleep Medicine, 138, 107850"
-        date: "2026"
-        doi: 10.1016/j.sleep.2025.107850
       - title: Basal electromyographic amplitude in REM and NREM sleep as a predictor of disease progression in isolated REM sleep behavior disorder
         authors:
           - "**Noh TG**"
@@ -171,6 +157,15 @@ cv:
         doi: 10.1093/sleep/zsae308
 
     Conference Papers:
+      - title: Clinical, Physiological, and Behavioral Characteristics of iRBD Patients With Ambulatory Dream Enactment Behaviors
+        authors:
+          - Kim SM
+          - "**Noh TG**"
+          - Han SJ
+          - et al
+        journal: "Sleep Medicine, 138, 107850"
+        date: "2026"
+        doi: 10.1016/j.sleep.2025.107850
       - title: Independent Contributions of Aperiodic and Periodic EEG Features as Prognostic Biomarkers for Phenoconversion to Alpha-Synucleinopathies in iRBD
         authors:
           - Lee EG
