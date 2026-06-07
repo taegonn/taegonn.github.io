@@ -5,82 +5,470 @@
 </style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;N&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=f0b101217084a90093badfe99ff9a7d1"> <link rel="canonical" href="https://taegonn.github.io/cv/"> <script src="/assets/js/theme.js?v=7af685e2ba20b37fef545c97b8064050"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
     initTheme();
   </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> Tae-Gon Noh </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/"> </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">Publications </a> </li> <li class="nav-item active"> <a class="nav-link" href="/cv/">CV <span class="sr-only">(current)</span> </a> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">CV</h1> <p class="post-description">Compact curriculum vitae for graduate application review.</p> </header> <article> <style>
-  .tg-cv-section {
-    border-top: 1px solid var(--global-divider-color, #e5e7eb);
-    margin-top: 1.8rem;
-    padding-top: 1.25rem;
+  .tg-page {
+    --tg-ink: #1f2429;
+    --tg-muted: #5f6975;
+    --tg-soft: #f6f7f4;
+    --tg-line: var(--global-divider-color, #dfe4e8);
+    --tg-accent: #176b63;
+    --tg-accent-2: #9a6a2f;
+    color: var(--tg-ink);
+    font-size: 1rem;
+    line-height: 1.68;
+    margin: 0 auto 4.5rem;
+    max-width: 980px;
   }
 
-  .tg-cv-section:first-of-type {
-    border-top: 0;
-    margin-top: 0;
-    padding-top: 0;
+  .tg-page a {
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
   }
 
-  .tg-cv-item {
-    display: grid;
-    gap: 0.4rem 1rem;
-    grid-template-columns: 10rem minmax(0, 1fr);
-    margin-bottom: 1rem;
+  .tg-page h1,
+  .tg-page h2,
+  .tg-page h3,
+  .tg-page p {
+    letter-spacing: 0;
   }
 
-  .tg-cv-date {
-    color: var(--global-text-color-light, #6b7280);
-    font-size: 0.9rem;
-  }
-
-  .tg-cv-title {
-    font-weight: 650;
+  .tg-page h2 {
+    color: var(--tg-ink);
+    font-size: 1.34rem;
+    font-weight: 720;
+    line-height: 1.25;
     margin: 0;
   }
 
-  .tg-cv-meta,
-  .tg-cv-note,
-  .tg-cv-publication-meta {
-    color: var(--global-text-color-light, #6b7280);
-    font-size: 0.92rem;
-    line-height: 1.45;
-    margin: 0.15rem 0 0;
-  }
-
-  .tg-cv-list {
-    margin: 0.45rem 0 0;
-    padding-left: 1.15rem;
-  }
-
-  .tg-cv-list li {
+  .tg-kicker {
+    color: var(--tg-accent);
+    font-size: 0.86rem;
+    font-weight: 700;
     margin-bottom: 0.35rem;
   }
 
+  .tg-muted {
+    color: var(--tg-muted);
+  }
+
+  .tg-hero {
+    align-items: center;
+    border-bottom: 1px solid var(--tg-line);
+    display: grid;
+    gap: 2.8rem;
+    grid-template-columns: minmax(0, 1fr) 230px;
+    padding: 2.6rem 0 2.5rem;
+  }
+
+  .tg-hero-name {
+    color: var(--tg-ink);
+    font-size: 3.05rem;
+    font-weight: 800;
+    line-height: 1.03;
+    margin: 0 0 0.7rem;
+  }
+
+  .tg-hero-role {
+    color: var(--tg-muted);
+    font-size: 1.08rem;
+    line-height: 1.5;
+    margin: 0 0 1.25rem;
+  }
+
+  .tg-hero-summary {
+    font-size: 1.08rem;
+    line-height: 1.75;
+    margin: 0;
+    max-width: 42rem;
+  }
+
+  .tg-hero-media {
+    justify-self: end;
+  }
+
+  .tg-portrait {
+    aspect-ratio: 1;
+    border: 1px solid var(--tg-line);
+    border-radius: 50%;
+    box-shadow: 0 16px 34px rgba(31, 36, 41, 0.14);
+    display: block;
+    object-fit: cover;
+    width: 218px;
+  }
+
+  .tg-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55rem 1.1rem;
+    margin-top: 1.35rem;
+  }
+
+  .tg-links a {
+    color: var(--tg-ink);
+    font-size: 0.95rem;
+    font-weight: 650;
+    text-decoration-color: rgba(23, 107, 99, 0.35);
+  }
+
+  .tg-links a:hover {
+    color: var(--tg-accent);
+  }
+
+  .tg-stat-grid {
+    border-top: 1px solid var(--tg-line);
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-top: 1.7rem;
+    padding-top: 1.25rem;
+  }
+
+  .tg-stat-value {
+    color: var(--tg-accent-2);
+    display: block;
+    font-size: 1.45rem;
+    font-weight: 760;
+    line-height: 1;
+  }
+
+  .tg-stat-label {
+    color: var(--tg-muted);
+    display: block;
+    font-size: 0.88rem;
+    margin-top: 0.25rem;
+  }
+
+  .tg-section {
+    margin-top: 3rem;
+  }
+
+  .tg-section-head {
+    align-items: end;
+    border-bottom: 1px solid var(--tg-line);
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    margin-bottom: 1.15rem;
+    padding-bottom: 0.65rem;
+  }
+
+  .tg-section-note {
+    color: var(--tg-muted);
+    font-size: 0.92rem;
+    margin: 0;
+  }
+
+  .tg-focus-grid {
+    display: grid;
+    gap: 1.35rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .tg-focus-item {
+    border-top: 3px solid var(--tg-accent);
+    padding-top: 0.85rem;
+  }
+
+  .tg-focus-item:nth-child(2) {
+    border-top-color: var(--tg-accent-2);
+  }
+
+  .tg-focus-item h3 {
+    color: var(--tg-ink);
+    font-size: 1.02rem;
+    font-weight: 720;
+    margin: 0 0 0.35rem;
+  }
+
+  .tg-focus-item p {
+    color: var(--tg-muted);
+    font-size: 0.96rem;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .tg-feed-wrap {
+    border: 1px solid var(--tg-line);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .tg-feed-toolbar {
+    align-items: center;
+    background: var(--tg-soft);
+    border-bottom: 1px solid var(--tg-line);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7rem 0.9rem;
+  }
+
+  .tg-feed-toolbar span {
+    color: var(--tg-muted);
+    font-size: 0.88rem;
+  }
+
+  .tg-feed {
+    display: grid;
+    gap: 0.85rem;
+    max-height: 35rem;
+    overflow-y: auto;
+    padding: 0.9rem;
+    scroll-snap-type: y proximity;
+  }
+
+  .tg-feed:focus {
+    outline: 2px solid var(--tg-accent);
+    outline-offset: -2px;
+  }
+
+  .tg-feed::-webkit-scrollbar {
+    width: 0.7rem;
+  }
+
+  .tg-feed::-webkit-scrollbar-thumb {
+    background: rgba(31, 36, 41, 0.24);
+    border: 3px solid transparent;
+    border-radius: 8px;
+    background-clip: padding-box;
+  }
+
+  .tg-work-card {
+    background: var(--global-bg-color, #fff);
+    border: 1px solid var(--tg-line);
+    border-radius: 8px;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 180px minmax(0, 1fr);
+    padding: 0.8rem;
+    scroll-snap-align: start;
+  }
+
+  .tg-work-card:hover {
+    border-color: rgba(23, 107, 99, 0.45);
+    box-shadow: 0 12px 26px rgba(31, 36, 41, 0.08);
+  }
+
+  .tg-work-card img {
+    aspect-ratio: 4 / 3;
+    border: 1px solid var(--tg-line);
+    border-radius: 6px;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .tg-work-title {
+    color: var(--tg-ink);
+    font-size: 1.05rem;
+    font-weight: 720;
+    line-height: 1.35;
+    margin: 0 0 0.4rem;
+  }
+
+  .tg-work-title a {
+    color: inherit;
+    text-decoration-color: rgba(23, 107, 99, 0.35);
+  }
+
+  .tg-work-meta {
+    color: var(--tg-muted);
+    font-size: 0.92rem;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .tg-publication-list,
   .tg-cv-publications {
+    counter-reset: tg-item;
     list-style: none;
     margin: 0;
     padding: 0;
   }
 
+  .tg-publication-item,
   .tg-cv-publications li {
-    border-top: 1px solid var(--global-divider-color, #e5e7eb);
-    padding: 0.8rem 0;
+    border-top: 1px solid var(--tg-line);
+    counter-increment: tg-item;
+    display: grid;
+    gap: 0.75rem;
+    grid-template-columns: 2.55rem minmax(0, 1fr);
+    padding: 1.05rem 0;
   }
 
-  .tg-cv-publications li:first-child {
+  .tg-publication-item:last-child,
+  .tg-cv-publications li:last-child {
+    border-bottom: 1px solid var(--tg-line);
+  }
+
+  .tg-publication-item::before,
+  .tg-cv-publications li::before {
+    color: var(--tg-accent-2);
+    content: counter(tg-item, decimal-leading-zero);
+    font-size: 0.8rem;
+    font-weight: 760;
+    padding-top: 0.15rem;
+  }
+
+  .tg-publication-title,
+  .tg-cv-title {
+    color: var(--tg-ink);
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.42;
+    margin: 0;
+  }
+
+  .tg-publication-meta,
+  .tg-publication-doi,
+  .tg-cv-meta,
+  .tg-cv-note,
+  .tg-cv-publication-meta {
+    color: var(--tg-muted);
+    font-size: 0.92rem;
+    line-height: 1.52;
+    margin: 0.25rem 0 0;
+  }
+
+  .tg-publication-doi a {
+    color: var(--tg-accent);
+  }
+
+  .tg-cv-lead {
+    border-bottom: 1px solid var(--tg-line);
+    padding: 0.3rem 0 1.4rem;
+  }
+
+  .tg-cv-lead p {
+    font-size: 1.05rem;
+    margin: 0;
+    max-width: 46rem;
+  }
+
+  .tg-cv-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem 1rem;
+    margin-top: 0.9rem;
+  }
+
+  .tg-cv-actions a {
+    color: var(--tg-ink);
+    font-size: 0.92rem;
+    font-weight: 650;
+  }
+
+  .tg-cv-section {
+    margin-top: 2.45rem;
+  }
+
+  .tg-cv-item {
+    border-top: 1px solid var(--tg-line);
+    display: grid;
+    gap: 0.5rem 1.1rem;
+    grid-template-columns: 9.5rem minmax(0, 1fr);
+    padding: 0.9rem 0;
+  }
+
+  .tg-cv-item:first-of-type {
     border-top: 0;
     padding-top: 0;
   }
 
+  .tg-section-head + .tg-cv-item,
+  .tg-section-head + .tg-publication-list > .tg-publication-item:first-child,
+  .tg-section-head + .tg-cv-publications > li:first-child {
+    border-top: 0;
+    padding-top: 0;
+  }
+
+  .tg-cv-date {
+    color: var(--tg-accent-2);
+    font-size: 0.88rem;
+    font-weight: 700;
+  }
+
+  .tg-cv-list {
+    margin: 0;
+    padding-left: 1.1rem;
+  }
+
+  .tg-cv-list li {
+    margin-bottom: 0.45rem;
+  }
+
   .tg-cv-skills {
     display: grid;
-    gap: 0.7rem 1rem;
+    gap: 0.75rem 1rem;
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  @media (max-width: 720px) {
-    .tg-cv-item,
+  .tg-cv-skills div {
+    border-top: 1px solid var(--tg-line);
+    padding-top: 0.7rem;
+  }
+
+  .tg-cv-skills strong {
+    color: var(--tg-ink);
+  }
+
+  html[data-theme='dark'] .tg-page {
+    --tg-ink: #f4f6f6;
+    --tg-muted: #b8c0c7;
+    --tg-soft: #181b1e;
+    --tg-line: #30363d;
+    --tg-accent: #6fc2b7;
+    --tg-accent-2: #d1a36a;
+  }
+
+  html[data-theme='dark'] .tg-work-card {
+    background: #111315;
+  }
+
+  @media (max-width: 820px) {
+    .tg-hero {
+      gap: 1.5rem;
+      grid-template-columns: 1fr;
+      padding-top: 1.8rem;
+    }
+
+    .tg-hero-media {
+      justify-self: start;
+      order: -1;
+    }
+
+    .tg-hero-name {
+      font-size: 2.35rem;
+    }
+
+    .tg-portrait {
+      width: 168px;
+    }
+
+    .tg-stat-grid,
+    .tg-focus-grid,
     .tg-cv-skills {
       grid-template-columns: 1fr;
     }
+
+    .tg-section-head {
+      align-items: start;
+      flex-direction: column;
+    }
+
+    .tg-work-card {
+      grid-template-columns: 1fr;
+    }
+
+    .tg-work-card img {
+      max-height: 14rem;
+    }
+
+    .tg-publication-item,
+    .tg-cv-publications li,
+    .tg-cv-item {
+      grid-template-columns: 1fr;
+    }
   }
-</style> <section class="tg-cv-section"> <p> M.S. candidate at Seoul National University studying medical AI, sleep physiology, and multimodal biomarkers for neurodegenerative disease progression. </p> <p class="tg-cv-note"> Email: <a href="mailto:ghgh3110@snu.ac.kr">ghgh3110@snu.ac.kr</a> / <a href="https://scholar.google.com/citations?user=gZOAJD4AAAAJ&amp;hl=en" rel="external nofollow noopener" target="_blank">Google Scholar</a> / <a href="https://orcid.org/0009-0001-1388-0903" rel="external nofollow noopener" target="_blank">ORCID</a> </p> </section> <section class="tg-cv-section"> <h2>Education</h2> <div class="tg-cv-item"> <div class="tg-cv-date">2024 - expected 2026</div> <div> <p class="tg-cv-title">M.S. candidate in Neuroscience, Seoul National University</p> <p class="tg-cv-meta">Seoul, South Korea / GPA: 3.56/4.0 / Advisor: Prof. Ki-Young Jung</p> </div> </div> <div class="tg-cv-item"> <div class="tg-cv-date">2018 - 2024</div> <div> <p class="tg-cv-title">B.S. in Biology, minor in Computer Engineering, Pusan National University</p> <p class="tg-cv-meta">Busan, South Korea / GPA: 3.57/4.5 / Mandatory military service, Republic of Korea Army, 2020-2022</p> </div> </div> </section> <section class="tg-cv-section"> <h2>Research Experience</h2> <div class="tg-cv-item"> <div class="tg-cv-date">2024 - present</div> <div> <p class="tg-cv-title">Graduate Researcher, Seoul National University</p> <p class="tg-cv-meta">Advisor: Prof. Ki-Young Jung</p> </div> </div> <div class="tg-cv-item"> <div class="tg-cv-date">2023 - 2024</div> <div> <p class="tg-cv-title">Research Intern, Seoul National University Hospital</p> <p class="tg-cv-meta">Advisor: Prof. Ki-Young Jung</p> </div> </div> </section> <section class="tg-cv-section"> <h2>Research Focus</h2> <ul class="tg-cv-list"> <li>Foundation model-based medical AI for disease progression modeling in Parkinson's disease and isolated REM sleep behavior disorder.</li> <li>Quantitative sleep and electrophysiology biomarkers from PSG, EEG, EMG, EOG, ECG, brain MRI, and clinical data.</li> <li>Survival modeling, heterogeneity modeling, longitudinal analysis, and clinical prediction in prodromal neurodegenerative disease.</li> </ul> </section> <section class="tg-cv-section"> <h2>Peer-reviewed Papers</h2> <ol class="tg-cv-publications"> <li> <p class="tg-cv-title"><a href="https://doi.org/10.1016/j.sleep.2026.108968" rel="external nofollow noopener" target="_blank">Clinical, behavioral, and physiological characteristics of isolated rapid eye movement sleep behavior disorder patients with ambulatory dream enactment behaviors</a></p> <p class="tg-cv-publication-meta"> Kim SM, Noh TG, Byun JI, Sunwoo JS, Shin JW, Kim TJ, Jun JS, Schenck CH, Jung KY. <em>Sleep Medicine</em>. 2026;144:108968. </p> </li> <li> <p class="tg-cv-title"><a href="https://doi.org/10.1093/sleep/zsaf415" rel="external nofollow noopener" target="_blank">Basal electromyographic amplitude in REM and NREM sleep as a predictor of disease progression in isolated REM sleep behavior disorder</a></p> <p class="tg-cv-publication-meta"> Noh TG, St. Louis EK, Jung KY, et al. <em>Sleep</em>. 2026;49(4):zsaf415. </p> </li> <li> <p class="tg-cv-title"><a href="https://doi.org/10.1016/j.sleep.2026.108811" rel="external nofollow noopener" target="_blank">Diagnostic cutoffs of REM sleep without atonia for identifying isolated REM sleep behavior disorder in a Korean population</a></p> <p class="tg-cv-publication-meta"> Noh TG, Byun JI, Hong JK, Yoon IY, Jung KY. <em>Sleep Medicine</em>. 2026;140:108811. </p> </li> <li> <p class="tg-cv-title"><a href="https://doi.org/10.1016/j.sleep.2025.106724" rel="external nofollow noopener" target="_blank">Altered functional brain networks in isolated REM sleep behavior disorder during phasic REM sleep</a></p> <p class="tg-cv-publication-meta"> Choi KM, Noh TG, Sunwoo JS, Byun JI, Jung KY. <em>Sleep Medicine</em>. 2025;134:106724. </p> </li> <li> <p class="tg-cv-title"><a href="https://doi.org/10.1016/j.parkreldis.2025.107956" rel="external nofollow noopener" target="_blank">Eye blinking characteristics as potential biomarkers in isolated REM sleep behavior disorder during visuospatial attention tasks</a></p> <p class="tg-cv-publication-meta"> Kim SM, Choi KM, Noh TG, Kim TJ, Jun JS, Byun JI, Sunwoo JS, Shin JW, et al. <em>Parkinsonism &amp; Related Disorders</em>. 2025;138:107956. </p> </li> <li> <p class="tg-cv-title"><a href="https://doi.org/10.1016/j.sleep.2025.03.013" rel="external nofollow noopener" target="_blank">Continuous REM sleep without atonia quantification improves prediction of phenoconversion to alpha-synucleinopathies in isolated REM sleep behavior disorder</a></p> <p class="tg-cv-publication-meta"> Noh TG, Lee S, Lee Y, Kim N, Shin DS, Shin JH, Byun JI, Kim HJ, Jung KY. <em>Sleep Medicine</em>. 2025;129:394-401. </p> </li> <li> <p class="tg-cv-title"><a href="https://doi.org/10.1093/sleep/zsae258" rel="external nofollow noopener" target="_blank">Enhanced delta-gamma phase-amplitude coupling during phasic rapid eye movement sleep in isolated rapid eye movement sleep behavior disorder</a></p> <p class="tg-cv-publication-meta"> Noh TG, Choi KM, Jun JS, Shin JW, Byun JI, Sunwoo JS, Jung KY. <em>Sleep</em>. 2025;48(4):zsae258. </p> </li> <li> <p class="tg-cv-title"><a href="https://doi.org/10.1093/sleep/zsae308" rel="external nofollow noopener" target="_blank">Prediction of phenoconversion into alpha-synucleinopathy in patients with isolated REM sleep behavior disorder using event-related potentials during visuospatial attention tasks</a></p> <p class="tg-cv-publication-meta"> Choi KM, Cha KS, Noh TG, Lee S, Shin YW, Byun JI, Jun JS, Shin JH, et al. <em>Sleep</em>. 2025;48(3):zsae308. </p> </li> </ol> </section> <section class="tg-cv-section"> <h2>Conference Papers</h2> <ol class="tg-cv-publications"> <li> <p class="tg-cv-title"><a href="https://doi.org/10.1016/j.sleep.2025.107850" rel="external nofollow noopener" target="_blank">Clinical, Physiological, and Behavioral Characteristics of iRBD Patients With Ambulatory Dream Enactment Behaviors</a></p> <p class="tg-cv-publication-meta"> Kim SM, Noh TG, Han SJ, et al. <em>Sleep Medicine</em>. 2026;138:107850. </p> </li> <li> <p class="tg-cv-title"><a href="https://doi.org/10.1093/sleep/zsag091.0799" rel="external nofollow noopener" target="_blank">Independent Contributions of Aperiodic and Periodic EEG Features as Prognostic Biomarkers for Phenoconversion to Alpha-Synucleinopathies in iRBD</a></p> <p class="tg-cv-publication-meta"> Lee EG, Noh TG, Jung KY. <em>Sleep</em>. 2026;49(Suppl 1):A358. Abstract 0800. </p> </li> <li> <p class="tg-cv-title"><a href="https://doi.org/10.1093/sleep/zsag091.0798" rel="external nofollow noopener" target="_blank">Resting-State EEG Subtype and Stage Inference Identifies Distinct Prodromal Biotypes and Staging in iRBD</a></p> <p class="tg-cv-publication-meta"> Shin JW, Yook SH, Noh TG, Bae S, Jung KY, Kim H. <em>Sleep</em>. 2026;49(Suppl 1):A357-A358. Abstract 0799. </p> </li> <li> <p class="tg-cv-title"><a href="https://onlinelibrary.wiley.com/doi/full/10.1111/jsr.14291" rel="external nofollow noopener" target="_blank">Increased phase amplitude coupling during phasic REM sleep in isolated REM sleep behavior disorder</a></p> <p class="tg-cv-publication-meta"> Jung KY, Noh TG, Han SJ, et al. <em>Journal of Sleep Research</em>. 2024;33(Suppl 1). </p> </li> <li> <p class="tg-cv-title"><a href="https://doi.org/10.1093/sleep/zsae067.01041" rel="external nofollow noopener" target="_blank">Increased delta-gamma coupling during phasic REM sleep in isolated RBD</a></p> <p class="tg-cv-publication-meta"> Noh TG, Lee Y, Kim EY, Sunwoo JS, Jung KY. <em>Sleep</em>. 2024;47(Suppl 1):A447-A448. Abstract 1041. </p> </li> </ol> </section> <section class="tg-cv-section"> <h2>Honors &amp; Awards</h2> <div class="tg-cv-item"> <div class="tg-cv-date">Dec 2025</div> <div>Paper Award, Seoul National University.</div> </div> <div class="tg-cv-item"> <div class="tg-cv-date">Jul 2025</div> <div>Award for Oral Presentation, Korean Sleep Research Society.</div> </div> <div class="tg-cv-item"> <div class="tg-cv-date">Dec 2024</div> <div>Paper Award, Seoul National University.</div> </div> <div class="tg-cv-item"> <div class="tg-cv-date">Jul 2024</div> <div>Grand Award for Poster Presentation, Korean Society of Sleep Medicine.</div> </div> <div class="tg-cv-item"> <div class="tg-cv-date">Nov 2023</div> <div>Award for Poster Presentation, Korean Sleep Research Society.</div> </div> <div class="tg-cv-item"> <div class="tg-cv-date">Jul 2023</div> <div>Award for Poster Presentation, Korean Society of Sleep Medicine.</div> </div> <div class="tg-cv-item"> <div class="tg-cv-date">Aug 2020</div> <div>2nd Award for CANSAT Korea, Korea Advanced Institute of Science and Technology.</div> </div> </section> <section class="tg-cv-section"> <h2>Professional Memberships</h2> <ul class="tg-cv-list"> <li>American Academy of Sleep Medicine, student member, Dec 2023-present.</li> <li>Korean Sleep Research Society, student member, Mar 2023-present.</li> <li>Korean Society of Sleep Medicine, student member, Mar 2023-present.</li> <li>Korean EEG Study Group, student member, Feb 2023-present.</li> </ul> </section> <section class="tg-cv-section"> <h2>Skills</h2> <div class="tg-cv-skills"> <div> <strong>Programming</strong><br>Python, MATLAB, C/C++, Linux</div> <div> <strong>Machine Learning</strong><br>PyTorch, scikit-learn, representation learning, foundation model-based medical AI</div> <div> <strong>Signal Processing and Sleep Analysis</strong><br>PSG, EEG, EOG, EMG, ECG, connectivity analysis, time-frequency analysis</div> <div> <strong>Neuroimaging</strong><br>Brain MRI preprocessing and analysis, NIfTI processing, atlas-based regional analysis</div> <div> <strong>Genetics and Statistical Genomics</strong><br>Polygenic risk score analysis, GWAS summary statistics analysis, Mendelian randomization</div> <div> <strong>Biostatistics and Clinical Data Analysis</strong><br>Regression modeling, survival analysis, longitudinal analysis, clinical prediction modeling</div> </div> </section> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Tae-Gon Noh. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
+</style> <div class="tg-page"> <section class="tg-cv-lead"> <div class="tg-kicker">Curriculum vitae</div> <p> M.S. candidate at Seoul National University studying medical AI, sleep physiology, and multimodal biomarkers for neurodegenerative disease progression. </p> <div class="tg-cv-actions"> <a href="mailto:ghgh3110@snu.ac.kr">ghgh3110@snu.ac.kr</a> <a href="https://scholar.google.com/citations?user=gZOAJD4AAAAJ&amp;hl=en" rel="external nofollow noopener" target="_blank">Google Scholar</a> <a href="https://orcid.org/0009-0001-1388-0903" rel="external nofollow noopener" target="_blank">ORCID</a> <a href="/assets/rendercv/rendercv_output/Tae-Gon_Noh_CV.pdf">Download PDF</a> </div> </section> <section class="tg-cv-section"> <div class="tg-section-head"> <h2>Education</h2> <p class="tg-section-note">Academic training.</p> </div> <div class="tg-cv-item"> <div class="tg-cv-date">2024 - expected 2026</div> <div> <p class="tg-cv-title">M.S. candidate in Neuroscience, Seoul National University</p> <p class="tg-cv-meta">Seoul, South Korea / GPA: 3.56/4.0 / Advisor: Prof. Ki-Young Jung</p> </div> </div> <div class="tg-cv-item"> <div class="tg-cv-date">2018 - 2024</div> <div> <p class="tg-cv-title">B.S. in Biology, minor in Computer Engineering, Pusan National University</p> <p class="tg-cv-meta">Busan, South Korea / GPA: 3.57/4.5 / Mandatory military service, Republic of Korea Army, 2020-2022</p> </div> </div> </section> <section class="tg-cv-section"> <div class="tg-section-head"> <h2>Research Experience</h2> <p class="tg-section-note">Laboratory appointments.</p> </div> <div class="tg-cv-item"> <div class="tg-cv-date">2024 - present</div> <div> <p class="tg-cv-title">Graduate Researcher, Seoul National University</p> <p class="tg-cv-meta">Advisor: Prof. Ki-Young Jung</p> </div> </div> <div class="tg-cv-item"> <div class="tg-cv-date">2023 - 2024</div> <div> <p class="tg-cv-title">Research Intern, Seoul National University Hospital</p> <p class="tg-cv-meta">Advisor: Prof. Ki-Young Jung</p> </div> </div> </section> <section class="tg-cv-section"> <div class="tg-section-head"> <h2>Research Focus</h2> <p class="tg-section-note">Core research directions.</p> </div> <div class="tg-focus-grid"> <article class="tg-focus-item"> <h3>Medical AI</h3> <p>Foundation model-based medical AI for disease progression modeling in Parkinson's disease and isolated REM sleep behavior disorder.</p> </article> <article class="tg-focus-item"> <h3>Quantitative Biomarkers</h3> <p>Sleep and electrophysiology biomarkers from PSG, EEG, EOG, EMG, ECG, brain MRI, and clinical data.</p> </article> <article class="tg-focus-item"> <h3>Clinical Prediction</h3> <p>Survival modeling, heterogeneity modeling, longitudinal analysis, and clinical prediction in prodromal neurodegenerative disease.</p> </article> </div> </section> <section class="tg-cv-section"> <div class="tg-section-head"> <h2>Peer-reviewed Papers</h2> <p class="tg-section-note">8 published journal articles.</p> </div> <ol class="tg-cv-publications"> <li> <div> <p class="tg-cv-title"><a href="https://doi.org/10.1016/j.sleep.2026.108968" rel="external nofollow noopener" target="_blank">Clinical, behavioral, and physiological characteristics of isolated rapid eye movement sleep behavior disorder patients with ambulatory dream enactment behaviors</a></p> <p class="tg-cv-publication-meta"> Kim SM, Noh TG, Byun JI, Sunwoo JS, Shin JW, Kim TJ, Jun JS, Schenck CH, Jung KY. <em>Sleep Medicine</em>. 2026;144:108968. </p> </div> </li> <li> <div> <p class="tg-cv-title"><a href="https://doi.org/10.1093/sleep/zsaf415" rel="external nofollow noopener" target="_blank">Basal electromyographic amplitude in REM and NREM sleep as a predictor of disease progression in isolated REM sleep behavior disorder</a></p> <p class="tg-cv-publication-meta"> Noh TG, St. Louis EK, Jung KY, et al. <em>Sleep</em>. 2026;49(4):zsaf415. </p> </div> </li> <li> <div> <p class="tg-cv-title"><a href="https://doi.org/10.1016/j.sleep.2026.108811" rel="external nofollow noopener" target="_blank">Diagnostic cutoffs of REM sleep without atonia for identifying isolated REM sleep behavior disorder in a Korean population</a></p> <p class="tg-cv-publication-meta"> Noh TG, Byun JI, Hong JK, Yoon IY, Jung KY. <em>Sleep Medicine</em>. 2026;140:108811. </p> </div> </li> <li> <div> <p class="tg-cv-title"><a href="https://doi.org/10.1016/j.sleep.2025.106724" rel="external nofollow noopener" target="_blank">Altered functional brain networks in isolated REM sleep behavior disorder during phasic REM sleep</a></p> <p class="tg-cv-publication-meta"> Choi KM, Noh TG, Sunwoo JS, Byun JI, Jung KY. <em>Sleep Medicine</em>. 2025;134:106724. </p> </div> </li> <li> <div> <p class="tg-cv-title"><a href="https://doi.org/10.1016/j.parkreldis.2025.107956" rel="external nofollow noopener" target="_blank">Eye blinking characteristics as potential biomarkers in isolated REM sleep behavior disorder during visuospatial attention tasks</a></p> <p class="tg-cv-publication-meta"> Kim SM, Choi KM, Noh TG, Kim TJ, Jun JS, Byun JI, Sunwoo JS, Shin JW, et al. <em>Parkinsonism &amp; Related Disorders</em>. 2025;138:107956. </p> </div> </li> <li> <div> <p class="tg-cv-title"><a href="https://doi.org/10.1016/j.sleep.2025.03.013" rel="external nofollow noopener" target="_blank">Continuous REM sleep without atonia quantification improves prediction of phenoconversion to alpha-synucleinopathies in isolated REM sleep behavior disorder</a></p> <p class="tg-cv-publication-meta"> Noh TG, Lee S, Lee Y, Kim N, Shin DS, Shin JH, Byun JI, Kim HJ, Jung KY. <em>Sleep Medicine</em>. 2025;129:394-401. </p> </div> </li> <li> <div> <p class="tg-cv-title"><a href="https://doi.org/10.1093/sleep/zsae258" rel="external nofollow noopener" target="_blank">Enhanced delta-gamma phase-amplitude coupling during phasic rapid eye movement sleep in isolated rapid eye movement sleep behavior disorder</a></p> <p class="tg-cv-publication-meta"> Noh TG, Choi KM, Jun JS, Shin JW, Byun JI, Sunwoo JS, Jung KY. <em>Sleep</em>. 2025;48(4):zsae258. </p> </div> </li> <li> <div> <p class="tg-cv-title"><a href="https://doi.org/10.1093/sleep/zsae308" rel="external nofollow noopener" target="_blank">Prediction of phenoconversion into alpha-synucleinopathy in patients with isolated REM sleep behavior disorder using event-related potentials during visuospatial attention tasks</a></p> <p class="tg-cv-publication-meta"> Choi KM, Cha KS, Noh TG, Lee S, Shin YW, Byun JI, Jun JS, Shin JH, et al. <em>Sleep</em>. 2025;48(3):zsae308. </p> </div> </li> </ol> </section> <section class="tg-cv-section"> <div class="tg-section-head"> <h2>Conference Papers</h2> <p class="tg-section-note">5 published abstracts and proceedings.</p> </div> <ol class="tg-cv-publications"> <li> <div> <p class="tg-cv-title"><a href="https://doi.org/10.1016/j.sleep.2025.107850" rel="external nofollow noopener" target="_blank">Clinical, Physiological, and Behavioral Characteristics of iRBD Patients With Ambulatory Dream Enactment Behaviors</a></p> <p class="tg-cv-publication-meta"> Kim SM, Noh TG, Han SJ, et al. <em>Sleep Medicine</em>. 2026;138:107850. </p> </div> </li> <li> <div> <p class="tg-cv-title"><a href="https://doi.org/10.1093/sleep/zsag091.0799" rel="external nofollow noopener" target="_blank">Independent Contributions of Aperiodic and Periodic EEG Features as Prognostic Biomarkers for Phenoconversion to Alpha-Synucleinopathies in iRBD</a></p> <p class="tg-cv-publication-meta"> Lee EG, Noh TG, Jung KY. <em>Sleep</em>. 2026;49(Suppl 1):A358. Abstract 0800. </p> </div> </li> <li> <div> <p class="tg-cv-title"><a href="https://doi.org/10.1093/sleep/zsag091.0798" rel="external nofollow noopener" target="_blank">Resting-State EEG Subtype and Stage Inference Identifies Distinct Prodromal Biotypes and Staging in iRBD</a></p> <p class="tg-cv-publication-meta"> Shin JW, Yook SH, Noh TG, Bae S, Jung KY, Kim H. <em>Sleep</em>. 2026;49(Suppl 1):A357-A358. Abstract 0799. </p> </div> </li> <li> <div> <p class="tg-cv-title"><a href="https://onlinelibrary.wiley.com/doi/full/10.1111/jsr.14291" rel="external nofollow noopener" target="_blank">Increased phase amplitude coupling during phasic REM sleep in isolated REM sleep behavior disorder</a></p> <p class="tg-cv-publication-meta"> Jung KY, Noh TG, Han SJ, et al. <em>Journal of Sleep Research</em>. 2024;33(Suppl 1). </p> </div> </li> <li> <div> <p class="tg-cv-title"><a href="https://doi.org/10.1093/sleep/zsae067.01041" rel="external nofollow noopener" target="_blank">Increased delta-gamma coupling during phasic REM sleep in isolated RBD</a></p> <p class="tg-cv-publication-meta"> Noh TG, Lee Y, Kim EY, Sunwoo JS, Jung KY. <em>Sleep</em>. 2024;47(Suppl 1):A447-A448. Abstract 1041. </p> </div> </li> </ol> </section> <section class="tg-cv-section"> <div class="tg-section-head"> <h2>Honors &amp; Awards</h2> <p class="tg-section-note">Selected awards and presentation honors.</p> </div> <div class="tg-cv-item"> <div class="tg-cv-date">Dec 2025</div> <div>Paper Award, Seoul National University.</div> </div> <div class="tg-cv-item"> <div class="tg-cv-date">Jul 2025</div> <div>Award for Oral Presentation, Korean Sleep Research Society.</div> </div> <div class="tg-cv-item"> <div class="tg-cv-date">Dec 2024</div> <div>Paper Award, Seoul National University.</div> </div> <div class="tg-cv-item"> <div class="tg-cv-date">Jul 2024</div> <div>Grand Award for Poster Presentation, Korean Society of Sleep Medicine.</div> </div> <div class="tg-cv-item"> <div class="tg-cv-date">Nov 2023</div> <div>Award for Poster Presentation, Korean Sleep Research Society.</div> </div> <div class="tg-cv-item"> <div class="tg-cv-date">Jul 2023</div> <div>Award for Poster Presentation, Korean Society of Sleep Medicine.</div> </div> <div class="tg-cv-item"> <div class="tg-cv-date">Aug 2020</div> <div>2nd Award for CANSAT Korea, Korea Advanced Institute of Science and Technology.</div> </div> </section> <section class="tg-cv-section"> <div class="tg-section-head"> <h2>Professional Memberships</h2> <p class="tg-section-note">Society memberships.</p> </div> <ul class="tg-cv-list"> <li>American Academy of Sleep Medicine, student member, Dec 2023-present.</li> <li>Korean Sleep Research Society, student member, Mar 2023-present.</li> <li>Korean Society of Sleep Medicine, student member, Mar 2023-present.</li> <li>Korean EEG Study Group, student member, Feb 2023-present.</li> </ul> </section> <section class="tg-cv-section"> <div class="tg-section-head"> <h2>Skills</h2> <p class="tg-section-note">Methods and technical tools.</p> </div> <div class="tg-cv-skills"> <div> <strong>Programming</strong><br>Python, MATLAB, C/C++, Linux</div> <div> <strong>Machine Learning</strong><br>PyTorch, scikit-learn, representation learning, foundation model-based medical AI</div> <div> <strong>Signal Processing and Sleep Analysis</strong><br>PSG, EEG, EOG, EMG, ECG, connectivity analysis, time-frequency analysis</div> <div> <strong>Neuroimaging</strong><br>Brain MRI preprocessing and analysis, NIfTI processing, atlas-based regional analysis</div> <div> <strong>Genetics and Statistical Genomics</strong><br>Polygenic risk score analysis, GWAS summary statistics analysis, Mendelian randomization</div> <div> <strong>Biostatistics and Clinical Data Analysis</strong><br>Regression modeling, survival analysis, longitudinal analysis, clinical prediction modeling</div> </div> </section> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Tae-Gon Noh. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
   };
