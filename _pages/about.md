@@ -2,7 +2,7 @@
 layout: about
 permalink: /
 selected_papers: false
-social: true
+social: false
 announcements:
   enabled: false
 latest_posts:
