@@ -113,32 +113,12 @@
     color: var(--tg-accent);
   }
 
-  .tg-stat-grid {
-    border-top: 1px solid var(--tg-line);
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    margin-top: 1.7rem;
-    padding-top: 1.25rem;
-  }
-
-  .tg-stat-value {
-    color: var(--tg-accent-2);
-    display: block;
-    font-size: 1.45rem;
-    font-weight: 760;
-    line-height: 1;
-  }
-
-  .tg-stat-label {
-    color: var(--tg-muted);
-    display: block;
-    font-size: 0.88rem;
-    margin-top: 0.25rem;
-  }
-
   .tg-section {
     margin-top: 3rem;
+  }
+
+  .tg-page > .tg-section:first-child {
+    margin-top: 1rem;
   }
 
   .tg-section-head {
@@ -154,35 +134,6 @@
   .tg-section-note {
     color: var(--tg-muted);
     font-size: 0.92rem;
-    margin: 0;
-  }
-
-  .tg-focus-grid {
-    display: grid;
-    gap: 1.35rem;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .tg-focus-item {
-    border-top: 3px solid var(--tg-accent);
-    padding-top: 0.85rem;
-  }
-
-  .tg-focus-item:nth-child(2) {
-    border-top-color: var(--tg-accent-2);
-  }
-
-  .tg-focus-item h3 {
-    color: var(--tg-ink);
-    font-size: 1.02rem;
-    font-weight: 720;
-    margin: 0 0 0.35rem;
-  }
-
-  .tg-focus-item p {
-    color: var(--tg-muted);
-    font-size: 0.96rem;
-    line-height: 1.6;
     margin: 0;
   }
 
@@ -276,16 +227,14 @@
     margin: 0;
   }
 
-  .tg-publication-list,
-  .tg-cv-publications {
+  .tg-publication-list {
     counter-reset: tg-item;
     list-style: none;
     margin: 0;
     padding: 0;
   }
 
-  .tg-publication-item,
-  .tg-cv-publications li {
+  .tg-publication-item {
     border-top: 1px solid var(--tg-line);
     counter-increment: tg-item;
     display: grid;
@@ -294,13 +243,11 @@
     padding: 1.05rem 0;
   }
 
-  .tg-publication-item:last-child,
-  .tg-cv-publications li:last-child {
+  .tg-publication-item:last-child {
     border-bottom: 1px solid var(--tg-line);
   }
 
-  .tg-publication-item::before,
-  .tg-cv-publications li::before {
+  .tg-publication-item::before {
     color: var(--tg-accent-2);
     content: counter(tg-item, decimal-leading-zero);
     font-size: 0.8rem;
@@ -320,8 +267,7 @@
   .tg-publication-meta,
   .tg-publication-doi,
   .tg-cv-meta,
-  .tg-cv-note,
-  .tg-cv-publication-meta {
+  .tg-cv-note {
     color: var(--tg-muted);
     font-size: 0.92rem;
     line-height: 1.52;
@@ -374,8 +320,7 @@
   }
 
   .tg-section-head + .tg-cv-item,
-  .tg-section-head + .tg-publication-list > .tg-publication-item:first-child,
-  .tg-section-head + .tg-cv-publications > li:first-child {
+  .tg-section-head + .tg-publication-list > .tg-publication-item:first-child {
     border-top: 0;
     padding-top: 0;
   }
@@ -443,8 +388,6 @@
       width: 168px;
     }
 
-    .tg-stat-grid,
-    .tg-focus-grid,
     .tg-cv-skills {
       grid-template-columns: 1fr;
     }
@@ -463,12 +406,11 @@
     }
 
     .tg-publication-item,
-    .tg-cv-publications li,
     .tg-cv-item {
       grid-template-columns: 1fr;
     }
   }
-</style> <div class="tg-page"> <section class="tg-cv-lead"> <div class="tg-kicker">Curriculum vitae</div> <p> M.S. candidate at Seoul National University studying medical AI, sleep physiology, and multimodal biomarkers for neurodegenerative disease progression. </p> <div class="tg-cv-actions"> <a href="mailto:ghgh3110@snu.ac.kr">ghgh3110@snu.ac.kr</a> <a href="https://scholar.google.com/citations?user=gZOAJD4AAAAJ&amp;hl=en" rel="external nofollow noopener" target="_blank">Google Scholar</a> <a href="https://orcid.org/0009-0001-1388-0903" rel="external nofollow noopener" target="_blank">ORCID</a> <a href="/assets/rendercv/rendercv_output/Tae-Gon_Noh_CV.pdf">Download PDF</a> </div> </section> <section class="tg-cv-section"> <div class="tg-section-head"> <h2>Education</h2> <p class="tg-section-note">Academic training.</p> </div> <div class="tg-cv-item"> <div class="tg-cv-date">2024 - expected 2026</div> <div> <p class="tg-cv-title">M.S. candidate in Neuroscience, Seoul National University</p> <p class="tg-cv-meta">Seoul, South Korea / GPA: 3.56/4.0 / Advisor: Prof. Ki-Young Jung</p> </div> </div> <div class="tg-cv-item"> <div class="tg-cv-date">2018 - 2024</div> <div> <p class="tg-cv-title">B.S. in Biology, minor in Computer Engineering, Pusan National University</p> <p class="tg-cv-meta">Busan, South Korea / GPA: 3.57/4.5 / Mandatory military service, Republic of Korea Army, 2020-2022</p> </div> </div> </section> <section class="tg-cv-section"> <div class="tg-section-head"> <h2>Research Experience</h2> <p class="tg-section-note">Laboratory appointments.</p> </div> <div class="tg-cv-item"> <div class="tg-cv-date">2024 - present</div> <div> <p class="tg-cv-title">Graduate Researcher, Seoul National University</p> <p class="tg-cv-meta">Advisor: Prof. Ki-Young Jung</p> </div> </div> <div class="tg-cv-item"> <div class="tg-cv-date">2023 - 2024</div> <div> <p class="tg-cv-title">Research Intern, Seoul National University Hospital</p> <p class="tg-cv-meta">Advisor: Prof. Ki-Young Jung</p> </div> </div> </section> <section class="tg-cv-section"> <div class="tg-section-head"> <h2>Research Focus</h2> <p class="tg-section-note">Core research directions.</p> </div> <div class="tg-focus-grid"> <article class="tg-focus-item"> <h3>Medical AI</h3> <p>Foundation model-based medical AI for disease progression modeling in Parkinson's disease and isolated REM sleep behavior disorder.</p> </article> <article class="tg-focus-item"> <h3>Quantitative Biomarkers</h3> <p>Sleep and electrophysiology biomarkers from PSG, EEG, EOG, EMG, ECG, brain MRI, and clinical data.</p> </article> <article class="tg-focus-item"> <h3>Clinical Prediction</h3> <p>Survival modeling, heterogeneity modeling, longitudinal analysis, and clinical prediction in prodromal neurodegenerative disease.</p> </article> </div> </section> <section class="tg-cv-section"> <div class="tg-section-head"> <h2>Peer-reviewed Papers</h2> <p class="tg-section-note">8 published journal articles.</p> </div> <ol class="tg-cv-publications"> <li> <div> <p class="tg-cv-title"><a href="https://doi.org/10.1016/j.sleep.2026.108968" rel="external nofollow noopener" target="_blank">Clinical, behavioral, and physiological characteristics of isolated rapid eye movement sleep behavior disorder patients with ambulatory dream enactment behaviors</a></p> <p class="tg-cv-publication-meta"> Kim SM, Noh TG, Byun JI, Sunwoo JS, Shin JW, Kim TJ, Jun JS, Schenck CH, Jung KY. <em>Sleep Medicine</em>. 2026;144:108968. </p> </div> </li> <li> <div> <p class="tg-cv-title"><a href="https://doi.org/10.1093/sleep/zsaf415" rel="external nofollow noopener" target="_blank">Basal electromyographic amplitude in REM and NREM sleep as a predictor of disease progression in isolated REM sleep behavior disorder</a></p> <p class="tg-cv-publication-meta"> Noh TG, St. Louis EK, Jung KY, et al. <em>Sleep</em>. 2026;49(4):zsaf415. </p> </div> </li> <li> <div> <p class="tg-cv-title"><a href="https://doi.org/10.1016/j.sleep.2026.108811" rel="external nofollow noopener" target="_blank">Diagnostic cutoffs of REM sleep without atonia for identifying isolated REM sleep behavior disorder in a Korean population</a></p> <p class="tg-cv-publication-meta"> Noh TG, Byun JI, Hong JK, Yoon IY, Jung KY. <em>Sleep Medicine</em>. 2026;140:108811. </p> </div> </li> <li> <div> <p class="tg-cv-title"><a href="https://doi.org/10.1016/j.sleep.2025.106724" rel="external nofollow noopener" target="_blank">Altered functional brain networks in isolated REM sleep behavior disorder during phasic REM sleep</a></p> <p class="tg-cv-publication-meta"> Choi KM, Noh TG, Sunwoo JS, Byun JI, Jung KY. <em>Sleep Medicine</em>. 2025;134:106724. </p> </div> </li> <li> <div> <p class="tg-cv-title"><a href="https://doi.org/10.1016/j.parkreldis.2025.107956" rel="external nofollow noopener" target="_blank">Eye blinking characteristics as potential biomarkers in isolated REM sleep behavior disorder during visuospatial attention tasks</a></p> <p class="tg-cv-publication-meta"> Kim SM, Choi KM, Noh TG, Kim TJ, Jun JS, Byun JI, Sunwoo JS, Shin JW, et al. <em>Parkinsonism &amp; Related Disorders</em>. 2025;138:107956. </p> </div> </li> <li> <div> <p class="tg-cv-title"><a href="https://doi.org/10.1016/j.sleep.2025.03.013" rel="external nofollow noopener" target="_blank">Continuous REM sleep without atonia quantification improves prediction of phenoconversion to alpha-synucleinopathies in isolated REM sleep behavior disorder</a></p> <p class="tg-cv-publication-meta"> Noh TG, Lee S, Lee Y, Kim N, Shin DS, Shin JH, Byun JI, Kim HJ, Jung KY. <em>Sleep Medicine</em>. 2025;129:394-401. </p> </div> </li> <li> <div> <p class="tg-cv-title"><a href="https://doi.org/10.1093/sleep/zsae258" rel="external nofollow noopener" target="_blank">Enhanced delta-gamma phase-amplitude coupling during phasic rapid eye movement sleep in isolated rapid eye movement sleep behavior disorder</a></p> <p class="tg-cv-publication-meta"> Noh TG, Choi KM, Jun JS, Shin JW, Byun JI, Sunwoo JS, Jung KY. <em>Sleep</em>. 2025;48(4):zsae258. </p> </div> </li> <li> <div> <p class="tg-cv-title"><a href="https://doi.org/10.1093/sleep/zsae308" rel="external nofollow noopener" target="_blank">Prediction of phenoconversion into alpha-synucleinopathy in patients with isolated REM sleep behavior disorder using event-related potentials during visuospatial attention tasks</a></p> <p class="tg-cv-publication-meta"> Choi KM, Cha KS, Noh TG, Lee S, Shin YW, Byun JI, Jun JS, Shin JH, et al. <em>Sleep</em>. 2025;48(3):zsae308. </p> </div> </li> </ol> </section> <section class="tg-cv-section"> <div class="tg-section-head"> <h2>Conference Papers</h2> <p class="tg-section-note">5 published abstracts and proceedings.</p> </div> <ol class="tg-cv-publications"> <li> <div> <p class="tg-cv-title"><a href="https://doi.org/10.1016/j.sleep.2025.107850" rel="external nofollow noopener" target="_blank">Clinical, Physiological, and Behavioral Characteristics of iRBD Patients With Ambulatory Dream Enactment Behaviors</a></p> <p class="tg-cv-publication-meta"> Kim SM, Noh TG, Han SJ, et al. <em>Sleep Medicine</em>. 2026;138:107850. </p> </div> </li> <li> <div> <p class="tg-cv-title"><a href="https://doi.org/10.1093/sleep/zsag091.0799" rel="external nofollow noopener" target="_blank">Independent Contributions of Aperiodic and Periodic EEG Features as Prognostic Biomarkers for Phenoconversion to Alpha-Synucleinopathies in iRBD</a></p> <p class="tg-cv-publication-meta"> Lee EG, Noh TG, Jung KY. <em>Sleep</em>. 2026;49(Suppl 1):A358. Abstract 0800. </p> </div> </li> <li> <div> <p class="tg-cv-title"><a href="https://doi.org/10.1093/sleep/zsag091.0798" rel="external nofollow noopener" target="_blank">Resting-State EEG Subtype and Stage Inference Identifies Distinct Prodromal Biotypes and Staging in iRBD</a></p> <p class="tg-cv-publication-meta"> Shin JW, Yook SH, Noh TG, Bae S, Jung KY, Kim H. <em>Sleep</em>. 2026;49(Suppl 1):A357-A358. Abstract 0799. </p> </div> </li> <li> <div> <p class="tg-cv-title"><a href="https://onlinelibrary.wiley.com/doi/full/10.1111/jsr.14291" rel="external nofollow noopener" target="_blank">Increased phase amplitude coupling during phasic REM sleep in isolated REM sleep behavior disorder</a></p> <p class="tg-cv-publication-meta"> Jung KY, Noh TG, Han SJ, et al. <em>Journal of Sleep Research</em>. 2024;33(Suppl 1). </p> </div> </li> <li> <div> <p class="tg-cv-title"><a href="https://doi.org/10.1093/sleep/zsae067.01041" rel="external nofollow noopener" target="_blank">Increased delta-gamma coupling during phasic REM sleep in isolated RBD</a></p> <p class="tg-cv-publication-meta"> Noh TG, Lee Y, Kim EY, Sunwoo JS, Jung KY. <em>Sleep</em>. 2024;47(Suppl 1):A447-A448. Abstract 1041. </p> </div> </li> </ol> </section> <section class="tg-cv-section"> <div class="tg-section-head"> <h2>Honors &amp; Awards</h2> <p class="tg-section-note">Selected awards and presentation honors.</p> </div> <div class="tg-cv-item"> <div class="tg-cv-date">Dec 2025</div> <div>Paper Award, Seoul National University.</div> </div> <div class="tg-cv-item"> <div class="tg-cv-date">Jul 2025</div> <div>Award for Oral Presentation, Korean Sleep Research Society.</div> </div> <div class="tg-cv-item"> <div class="tg-cv-date">Dec 2024</div> <div>Paper Award, Seoul National University.</div> </div> <div class="tg-cv-item"> <div class="tg-cv-date">Jul 2024</div> <div>Grand Award for Poster Presentation, Korean Society of Sleep Medicine.</div> </div> <div class="tg-cv-item"> <div class="tg-cv-date">Nov 2023</div> <div>Award for Poster Presentation, Korean Sleep Research Society.</div> </div> <div class="tg-cv-item"> <div class="tg-cv-date">Jul 2023</div> <div>Award for Poster Presentation, Korean Society of Sleep Medicine.</div> </div> <div class="tg-cv-item"> <div class="tg-cv-date">Aug 2020</div> <div>2nd Award for CANSAT Korea, Korea Advanced Institute of Science and Technology.</div> </div> </section> <section class="tg-cv-section"> <div class="tg-section-head"> <h2>Professional Memberships</h2> <p class="tg-section-note">Society memberships.</p> </div> <ul class="tg-cv-list"> <li>American Academy of Sleep Medicine, student member, Dec 2023-present.</li> <li>Korean Sleep Research Society, student member, Mar 2023-present.</li> <li>Korean Society of Sleep Medicine, student member, Mar 2023-present.</li> <li>Korean EEG Study Group, student member, Feb 2023-present.</li> </ul> </section> <section class="tg-cv-section"> <div class="tg-section-head"> <h2>Skills</h2> <p class="tg-section-note">Methods and technical tools.</p> </div> <div class="tg-cv-skills"> <div> <strong>Programming</strong><br>Python, MATLAB, C/C++, Linux</div> <div> <strong>Machine Learning</strong><br>PyTorch, scikit-learn, representation learning, foundation model-based medical AI</div> <div> <strong>Signal Processing and Sleep Analysis</strong><br>PSG, EEG, EOG, EMG, ECG, connectivity analysis, time-frequency analysis</div> <div> <strong>Neuroimaging</strong><br>Brain MRI preprocessing and analysis, NIfTI processing, atlas-based regional analysis</div> <div> <strong>Genetics and Statistical Genomics</strong><br>Polygenic risk score analysis, GWAS summary statistics analysis, Mendelian randomization</div> <div> <strong>Biostatistics and Clinical Data Analysis</strong><br>Regression modeling, survival analysis, longitudinal analysis, clinical prediction modeling</div> </div> </section> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Tae-Gon Noh. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
+</style> <div class="tg-page"> <section class="tg-cv-lead"> <div class="tg-kicker">Curriculum vitae</div> <p> M.S. candidate at Seoul National University studying medical AI, sleep physiology, and multimodal biomarkers for neurodegenerative disease progression. </p> <div class="tg-cv-actions"> <a href="mailto:ghgh3110@snu.ac.kr">ghgh3110@snu.ac.kr</a> <a href="/assets/rendercv/rendercv_output/Tae-Gon_Noh_CV.pdf">Download PDF</a> </div> </section> <section class="tg-cv-section"> <div class="tg-section-head"> <h2>Education</h2> <p class="tg-section-note">Academic training.</p> </div> <div class="tg-cv-item"> <div class="tg-cv-date">2024 - expected 2026</div> <div> <p class="tg-cv-title">M.S. candidate in Neuroscience, Seoul National University</p> <p class="tg-cv-meta">Seoul, South Korea / GPA: 3.56/4.0 / Advisor: Prof. Ki-Young Jung</p> </div> </div> <div class="tg-cv-item"> <div class="tg-cv-date">2018 - 2024</div> <div> <p class="tg-cv-title">B.S. in Biology, minor in Computer Engineering, Pusan National University</p> <p class="tg-cv-meta">Busan, South Korea / GPA: 3.57/4.5 / Mandatory military service, Republic of Korea Army, 2020-2022</p> </div> </div> </section> <section class="tg-cv-section"> <div class="tg-section-head"> <h2>Research Experience</h2> <p class="tg-section-note">Laboratory appointments.</p> </div> <div class="tg-cv-item"> <div class="tg-cv-date">2024 - present</div> <div> <p class="tg-cv-title">Graduate Researcher, Seoul National University</p> <p class="tg-cv-meta">Advisor: Prof. Ki-Young Jung</p> </div> </div> <div class="tg-cv-item"> <div class="tg-cv-date">2023 - 2024</div> <div> <p class="tg-cv-title">Research Intern, Seoul National University Hospital</p> <p class="tg-cv-meta">Advisor: Prof. Ki-Young Jung</p> </div> </div> </section> <section class="tg-cv-section"> <div class="tg-section-head"> <h2>Publications</h2> </div> <div class="tg-cv-item"> <div class="tg-cv-date">Current</div> <div> <p class="tg-cv-title">Peer-reviewed and conference papers</p> <p class="tg-cv-meta"> Maintained on the <a href="/publications/">Publications</a> page. </p> </div> </div> </section> <section class="tg-cv-section"> <div class="tg-section-head"> <h2>Honors &amp; Awards</h2> <p class="tg-section-note">Selected awards and presentation honors.</p> </div> <div class="tg-cv-item"> <div class="tg-cv-date">Dec 2025</div> <div>Paper Award, Seoul National University.</div> </div> <div class="tg-cv-item"> <div class="tg-cv-date">Jul 2025</div> <div>Award for Oral Presentation, Korean Sleep Research Society.</div> </div> <div class="tg-cv-item"> <div class="tg-cv-date">Dec 2024</div> <div>Paper Award, Seoul National University.</div> </div> <div class="tg-cv-item"> <div class="tg-cv-date">Jul 2024</div> <div>Grand Award for Poster Presentation, Korean Society of Sleep Medicine.</div> </div> <div class="tg-cv-item"> <div class="tg-cv-date">Nov 2023</div> <div>Award for Poster Presentation, Korean Sleep Research Society.</div> </div> <div class="tg-cv-item"> <div class="tg-cv-date">Jul 2023</div> <div>Award for Poster Presentation, Korean Society of Sleep Medicine.</div> </div> <div class="tg-cv-item"> <div class="tg-cv-date">Aug 2020</div> <div>2nd Award for CANSAT Korea, Korea Advanced Institute of Science and Technology.</div> </div> </section> <section class="tg-cv-section"> <div class="tg-section-head"> <h2>Professional Memberships</h2> <p class="tg-section-note">Society memberships.</p> </div> <ul class="tg-cv-list"> <li>American Academy of Sleep Medicine, student member, Dec 2023-present.</li> <li>Korean Sleep Research Society, student member, Mar 2023-present.</li> <li>Korean Society of Sleep Medicine, student member, Mar 2023-present.</li> <li>Korean EEG Study Group, student member, Feb 2023-present.</li> </ul> </section> <section class="tg-cv-section"> <div class="tg-section-head"> <h2>Skills</h2> <p class="tg-section-note">Methods and technical tools.</p> </div> <div class="tg-cv-skills"> <div> <strong>Programming</strong><br>Python, MATLAB, C/C++, Linux</div> <div> <strong>Machine Learning</strong><br>PyTorch, scikit-learn, representation learning, foundation model-based medical AI</div> <div> <strong>Signal Processing and Sleep Analysis</strong><br>PSG, EEG, EOG, EMG, ECG, connectivity analysis, time-frequency analysis</div> <div> <strong>Neuroimaging</strong><br>Brain MRI preprocessing and analysis, NIfTI processing, atlas-based regional analysis</div> <div> <strong>Genetics and Statistical Genomics</strong><br>Polygenic risk score analysis, GWAS summary statistics analysis, Mendelian randomization</div> <div> <strong>Biostatistics and Clinical Data Analysis</strong><br>Regression modeling, survival analysis, longitudinal analysis, clinical prediction modeling</div> </div> </section> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Tae-Gon Noh. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
   };

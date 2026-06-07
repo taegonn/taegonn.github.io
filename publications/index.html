@@ -113,32 +113,12 @@
     color: var(--tg-accent);
   }
 
-  .tg-stat-grid {
-    border-top: 1px solid var(--tg-line);
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    margin-top: 1.7rem;
-    padding-top: 1.25rem;
-  }
-
-  .tg-stat-value {
-    color: var(--tg-accent-2);
-    display: block;
-    font-size: 1.45rem;
-    font-weight: 760;
-    line-height: 1;
-  }
-
-  .tg-stat-label {
-    color: var(--tg-muted);
-    display: block;
-    font-size: 0.88rem;
-    margin-top: 0.25rem;
-  }
-
   .tg-section {
     margin-top: 3rem;
+  }
+
+  .tg-page > .tg-section:first-child {
+    margin-top: 1rem;
   }
 
   .tg-section-head {
@@ -154,35 +134,6 @@
   .tg-section-note {
     color: var(--tg-muted);
     font-size: 0.92rem;
-    margin: 0;
-  }
-
-  .tg-focus-grid {
-    display: grid;
-    gap: 1.35rem;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .tg-focus-item {
-    border-top: 3px solid var(--tg-accent);
-    padding-top: 0.85rem;
-  }
-
-  .tg-focus-item:nth-child(2) {
-    border-top-color: var(--tg-accent-2);
-  }
-
-  .tg-focus-item h3 {
-    color: var(--tg-ink);
-    font-size: 1.02rem;
-    font-weight: 720;
-    margin: 0 0 0.35rem;
-  }
-
-  .tg-focus-item p {
-    color: var(--tg-muted);
-    font-size: 0.96rem;
-    line-height: 1.6;
     margin: 0;
   }
 
@@ -276,16 +227,14 @@
     margin: 0;
   }
 
-  .tg-publication-list,
-  .tg-cv-publications {
+  .tg-publication-list {
     counter-reset: tg-item;
     list-style: none;
     margin: 0;
     padding: 0;
   }
 
-  .tg-publication-item,
-  .tg-cv-publications li {
+  .tg-publication-item {
     border-top: 1px solid var(--tg-line);
     counter-increment: tg-item;
     display: grid;
@@ -294,13 +243,11 @@
     padding: 1.05rem 0;
   }
 
-  .tg-publication-item:last-child,
-  .tg-cv-publications li:last-child {
+  .tg-publication-item:last-child {
     border-bottom: 1px solid var(--tg-line);
   }
 
-  .tg-publication-item::before,
-  .tg-cv-publications li::before {
+  .tg-publication-item::before {
     color: var(--tg-accent-2);
     content: counter(tg-item, decimal-leading-zero);
     font-size: 0.8rem;
@@ -320,8 +267,7 @@
   .tg-publication-meta,
   .tg-publication-doi,
   .tg-cv-meta,
-  .tg-cv-note,
-  .tg-cv-publication-meta {
+  .tg-cv-note {
     color: var(--tg-muted);
     font-size: 0.92rem;
     line-height: 1.52;
@@ -374,8 +320,7 @@
   }
 
   .tg-section-head + .tg-cv-item,
-  .tg-section-head + .tg-publication-list > .tg-publication-item:first-child,
-  .tg-section-head + .tg-cv-publications > li:first-child {
+  .tg-section-head + .tg-publication-list > .tg-publication-item:first-child {
     border-top: 0;
     padding-top: 0;
   }
@@ -443,8 +388,6 @@
       width: 168px;
     }
 
-    .tg-stat-grid,
-    .tg-focus-grid,
     .tg-cv-skills {
       grid-template-columns: 1fr;
     }
@@ -463,12 +406,11 @@
     }
 
     .tg-publication-item,
-    .tg-cv-publications li,
     .tg-cv-item {
       grid-template-columns: 1fr;
     }
   }
-</style> <div class="tg-page"> <section class="tg-cv-lead"> <div class="tg-kicker">Published work</div> <p>Published journal articles and conference papers. Under-review manuscripts are intentionally omitted.</p> <div class="tg-stat-grid" aria-label="Publication summary"> <div> <span class="tg-stat-value">8</span> <span class="tg-stat-label">peer-reviewed papers</span> </div> <div> <span class="tg-stat-value">5</span> <span class="tg-stat-label">conference papers</span> </div> <div> <span class="tg-stat-value">2025-2026</span> <span class="tg-stat-label">publication span</span> </div> </div> </section> <section class="tg-section"> <div class="tg-section-head"> <h2>Peer-reviewed Papers</h2> <p class="tg-section-note">Published journal articles only.</p> </div> <ol class="tg-publication-list"> <li class="tg-publication-item"> <div> <p class="tg-publication-title"> <a href="https://doi.org/10.1016/j.sleep.2026.108968" rel="external nofollow noopener" target="_blank">Clinical, behavioral, and physiological characteristics of isolated rapid eye movement sleep behavior disorder patients with ambulatory dream enactment behaviors</a> </p> <p class="tg-publication-meta"> Kim SM, Noh TG, Byun JI, Sunwoo JS, Shin JW, Kim TJ, Jun JS, Schenck CH, Jung KY. <em>Sleep Medicine</em>. 2026;144:108968. </p> <p class="tg-publication-doi">doi: <a href="https://doi.org/10.1016/j.sleep.2026.108968" rel="external nofollow noopener" target="_blank">10.1016/j.sleep.2026.108968</a></p> </div> </li> <li class="tg-publication-item"> <div> <p class="tg-publication-title"> <a href="https://doi.org/10.1093/sleep/zsaf415" rel="external nofollow noopener" target="_blank">Basal electromyographic amplitude in REM and NREM sleep as a predictor of disease progression in isolated REM sleep behavior disorder</a> </p> <p class="tg-publication-meta"> Noh TG, St. Louis EK, Jung KY, et al. <em>Sleep</em>. 2026;49(4):zsaf415. </p> <p class="tg-publication-doi">doi: <a href="https://doi.org/10.1093/sleep/zsaf415" rel="external nofollow noopener" target="_blank">10.1093/sleep/zsaf415</a></p> </div> </li> <li class="tg-publication-item"> <div> <p class="tg-publication-title"> <a href="https://doi.org/10.1016/j.sleep.2026.108811" rel="external nofollow noopener" target="_blank">Diagnostic cutoffs of REM sleep without atonia for identifying isolated REM sleep behavior disorder in a Korean population</a> </p> <p class="tg-publication-meta"> Noh TG, Byun JI, Hong JK, Yoon IY, Jung KY. <em>Sleep Medicine</em>. 2026;140:108811. </p> <p class="tg-publication-doi">doi: <a href="https://doi.org/10.1016/j.sleep.2026.108811" rel="external nofollow noopener" target="_blank">10.1016/j.sleep.2026.108811</a></p> </div> </li> <li class="tg-publication-item"> <div> <p class="tg-publication-title"> <a href="https://doi.org/10.1016/j.sleep.2025.106724" rel="external nofollow noopener" target="_blank">Altered functional brain networks in isolated REM sleep behavior disorder during phasic REM sleep</a> </p> <p class="tg-publication-meta"> Choi KM, Noh TG, Sunwoo JS, Byun JI, Jung KY. <em>Sleep Medicine</em>. 2025;134:106724. </p> <p class="tg-publication-doi">doi: <a href="https://doi.org/10.1016/j.sleep.2025.106724" rel="external nofollow noopener" target="_blank">10.1016/j.sleep.2025.106724</a></p> </div> </li> <li class="tg-publication-item"> <div> <p class="tg-publication-title"> <a href="https://doi.org/10.1016/j.parkreldis.2025.107956" rel="external nofollow noopener" target="_blank">Eye blinking characteristics as potential biomarkers in isolated REM sleep behavior disorder during visuospatial attention tasks</a> </p> <p class="tg-publication-meta"> Kim SM, Choi KM, Noh TG, Kim TJ, Jun JS, Byun JI, Sunwoo JS, Shin JW, et al. <em>Parkinsonism &amp; Related Disorders</em>. 2025;138:107956. </p> <p class="tg-publication-doi">doi: <a href="https://doi.org/10.1016/j.parkreldis.2025.107956" rel="external nofollow noopener" target="_blank">10.1016/j.parkreldis.2025.107956</a></p> </div> </li> <li class="tg-publication-item"> <div> <p class="tg-publication-title"> <a href="https://doi.org/10.1016/j.sleep.2025.03.013" rel="external nofollow noopener" target="_blank">Continuous REM sleep without atonia quantification improves prediction of phenoconversion to alpha-synucleinopathies in isolated REM sleep behavior disorder</a> </p> <p class="tg-publication-meta"> Noh TG, Lee S, Lee Y, Kim N, Shin DS, Shin JH, Byun JI, Kim HJ, Jung KY. <em>Sleep Medicine</em>. 2025;129:394-401. </p> <p class="tg-publication-doi">doi: <a href="https://doi.org/10.1016/j.sleep.2025.03.013" rel="external nofollow noopener" target="_blank">10.1016/j.sleep.2025.03.013</a></p> </div> </li> <li class="tg-publication-item"> <div> <p class="tg-publication-title"> <a href="https://doi.org/10.1093/sleep/zsae258" rel="external nofollow noopener" target="_blank">Enhanced delta-gamma phase-amplitude coupling during phasic rapid eye movement sleep in isolated rapid eye movement sleep behavior disorder</a> </p> <p class="tg-publication-meta"> Noh TG, Choi KM, Jun JS, Shin JW, Byun JI, Sunwoo JS, Jung KY. <em>Sleep</em>. 2025;48(4):zsae258. </p> <p class="tg-publication-doi">doi: <a href="https://doi.org/10.1093/sleep/zsae258" rel="external nofollow noopener" target="_blank">10.1093/sleep/zsae258</a></p> </div> </li> <li class="tg-publication-item"> <div> <p class="tg-publication-title"> <a href="https://doi.org/10.1093/sleep/zsae308" rel="external nofollow noopener" target="_blank">Prediction of phenoconversion into alpha-synucleinopathy in patients with isolated REM sleep behavior disorder using event-related potentials during visuospatial attention tasks</a> </p> <p class="tg-publication-meta"> Choi KM, Cha KS, Noh TG, Lee S, Shin YW, Byun JI, Jun JS, Shin JH, et al. <em>Sleep</em>. 2025;48(3):zsae308. </p> <p class="tg-publication-doi">doi: <a href="https://doi.org/10.1093/sleep/zsae308" rel="external nofollow noopener" target="_blank">10.1093/sleep/zsae308</a></p> </div> </li> </ol> </section> <section class="tg-section"> <div class="tg-section-head"> <h2>Conference Papers</h2> <p class="tg-section-note">Published abstracts and proceedings.</p> </div> <ol class="tg-publication-list"> <li class="tg-publication-item"> <div> <p class="tg-publication-title"> <a href="https://doi.org/10.1016/j.sleep.2025.107850" rel="external nofollow noopener" target="_blank">Clinical, Physiological, and Behavioral Characteristics of iRBD Patients With Ambulatory Dream Enactment Behaviors</a> </p> <p class="tg-publication-meta"> Kim SM, Noh TG, Han SJ, et al. <em>Sleep Medicine</em>. 2026;138:107850. </p> <p class="tg-publication-doi">doi: <a href="https://doi.org/10.1016/j.sleep.2025.107850" rel="external nofollow noopener" target="_blank">10.1016/j.sleep.2025.107850</a></p> </div> </li> <li class="tg-publication-item"> <div> <p class="tg-publication-title"> <a href="https://doi.org/10.1093/sleep/zsag091.0799" rel="external nofollow noopener" target="_blank">Independent Contributions of Aperiodic and Periodic EEG Features as Prognostic Biomarkers for Phenoconversion to Alpha-Synucleinopathies in iRBD</a> </p> <p class="tg-publication-meta"> Lee EG, Noh TG, Jung KY. <em>Sleep</em>. 2026;49(Suppl 1):A358. Abstract 0800. </p> <p class="tg-publication-doi">doi: <a href="https://doi.org/10.1093/sleep/zsag091.0799" rel="external nofollow noopener" target="_blank">10.1093/sleep/zsag091.0799</a></p> </div> </li> <li class="tg-publication-item"> <div> <p class="tg-publication-title"> <a href="https://doi.org/10.1093/sleep/zsag091.0798" rel="external nofollow noopener" target="_blank">Resting-State EEG Subtype and Stage Inference Identifies Distinct Prodromal Biotypes and Staging in iRBD</a> </p> <p class="tg-publication-meta"> Shin JW, Yook SH, Noh TG, Bae S, Jung KY, Kim H. <em>Sleep</em>. 2026;49(Suppl 1):A357-A358. Abstract 0799. </p> <p class="tg-publication-doi">doi: <a href="https://doi.org/10.1093/sleep/zsag091.0798" rel="external nofollow noopener" target="_blank">10.1093/sleep/zsag091.0798</a></p> </div> </li> <li class="tg-publication-item"> <div> <p class="tg-publication-title"> <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/jsr.14291" rel="external nofollow noopener" target="_blank">Increased phase amplitude coupling during phasic REM sleep in isolated REM sleep behavior disorder</a> </p> <p class="tg-publication-meta"> Jung KY, Noh TG, Han SJ, et al. <em>Journal of Sleep Research</em>. 2024;33(Suppl 1). </p> </div> </li> <li class="tg-publication-item"> <div> <p class="tg-publication-title"> <a href="https://doi.org/10.1093/sleep/zsae067.01041" rel="external nofollow noopener" target="_blank">Increased delta-gamma coupling during phasic REM sleep in isolated RBD</a> </p> <p class="tg-publication-meta"> Noh TG, Lee Y, Kim EY, Sunwoo JS, Jung KY. <em>Sleep</em>. 2024;47(Suppl 1):A447-A448. Abstract 1041. </p> <p class="tg-publication-doi">doi: <a href="https://doi.org/10.1093/sleep/zsae067.01041" rel="external nofollow noopener" target="_blank">10.1093/sleep/zsae067.01041</a></p> </div> </li> </ol> </section> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Tae-Gon Noh. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
+</style> <div class="tg-page"> <section class="tg-section"> <div class="tg-section-head"> <h2>Peer-reviewed Papers</h2> </div> <ol class="tg-publication-list"> <li class="tg-publication-item"> <div> <p class="tg-publication-title"> <a href="https://doi.org/10.1016/j.sleep.2026.108968" rel="external nofollow noopener" target="_blank">Clinical, behavioral, and physiological characteristics of isolated rapid eye movement sleep behavior disorder patients with ambulatory dream enactment behaviors</a> </p> <p class="tg-publication-meta"> Kim SM, Noh TG, Byun JI, Sunwoo JS, Shin JW, Kim TJ, Jun JS, Schenck CH, Jung KY. <em>Sleep Medicine</em>. 2026;144:108968. </p> <p class="tg-publication-doi">doi: <a href="https://doi.org/10.1016/j.sleep.2026.108968" rel="external nofollow noopener" target="_blank">10.1016/j.sleep.2026.108968</a></p> </div> </li> <li class="tg-publication-item"> <div> <p class="tg-publication-title"> <a href="https://doi.org/10.1093/sleep/zsaf415" rel="external nofollow noopener" target="_blank">Basal electromyographic amplitude in REM and NREM sleep as a predictor of disease progression in isolated REM sleep behavior disorder</a> </p> <p class="tg-publication-meta"> Noh TG, St. Louis EK, Jung KY, et al. <em>Sleep</em>. 2026;49(4):zsaf415. </p> <p class="tg-publication-doi">doi: <a href="https://doi.org/10.1093/sleep/zsaf415" rel="external nofollow noopener" target="_blank">10.1093/sleep/zsaf415</a></p> </div> </li> <li class="tg-publication-item"> <div> <p class="tg-publication-title"> <a href="https://doi.org/10.1016/j.sleep.2026.108811" rel="external nofollow noopener" target="_blank">Diagnostic cutoffs of REM sleep without atonia for identifying isolated REM sleep behavior disorder in a Korean population</a> </p> <p class="tg-publication-meta"> Noh TG, Byun JI, Hong JK, Yoon IY, Jung KY. <em>Sleep Medicine</em>. 2026;140:108811. </p> <p class="tg-publication-doi">doi: <a href="https://doi.org/10.1016/j.sleep.2026.108811" rel="external nofollow noopener" target="_blank">10.1016/j.sleep.2026.108811</a></p> </div> </li> <li class="tg-publication-item"> <div> <p class="tg-publication-title"> <a href="https://doi.org/10.1016/j.sleep.2025.106724" rel="external nofollow noopener" target="_blank">Altered functional brain networks in isolated REM sleep behavior disorder during phasic REM sleep</a> </p> <p class="tg-publication-meta"> Choi KM, Noh TG, Sunwoo JS, Byun JI, Jung KY. <em>Sleep Medicine</em>. 2025;134:106724. </p> <p class="tg-publication-doi">doi: <a href="https://doi.org/10.1016/j.sleep.2025.106724" rel="external nofollow noopener" target="_blank">10.1016/j.sleep.2025.106724</a></p> </div> </li> <li class="tg-publication-item"> <div> <p class="tg-publication-title"> <a href="https://doi.org/10.1016/j.parkreldis.2025.107956" rel="external nofollow noopener" target="_blank">Eye blinking characteristics as potential biomarkers in isolated REM sleep behavior disorder during visuospatial attention tasks</a> </p> <p class="tg-publication-meta"> Kim SM, Choi KM, Noh TG, Kim TJ, Jun JS, Byun JI, Sunwoo JS, Shin JW, et al. <em>Parkinsonism &amp; Related Disorders</em>. 2025;138:107956. </p> <p class="tg-publication-doi">doi: <a href="https://doi.org/10.1016/j.parkreldis.2025.107956" rel="external nofollow noopener" target="_blank">10.1016/j.parkreldis.2025.107956</a></p> </div> </li> <li class="tg-publication-item"> <div> <p class="tg-publication-title"> <a href="https://doi.org/10.1016/j.sleep.2025.03.013" rel="external nofollow noopener" target="_blank">Continuous REM sleep without atonia quantification improves prediction of phenoconversion to alpha-synucleinopathies in isolated REM sleep behavior disorder</a> </p> <p class="tg-publication-meta"> Noh TG, Lee S, Lee Y, Kim N, Shin DS, Shin JH, Byun JI, Kim HJ, Jung KY. <em>Sleep Medicine</em>. 2025;129:394-401. </p> <p class="tg-publication-doi">doi: <a href="https://doi.org/10.1016/j.sleep.2025.03.013" rel="external nofollow noopener" target="_blank">10.1016/j.sleep.2025.03.013</a></p> </div> </li> <li class="tg-publication-item"> <div> <p class="tg-publication-title"> <a href="https://doi.org/10.1093/sleep/zsae258" rel="external nofollow noopener" target="_blank">Enhanced delta-gamma phase-amplitude coupling during phasic rapid eye movement sleep in isolated rapid eye movement sleep behavior disorder</a> </p> <p class="tg-publication-meta"> Noh TG, Choi KM, Jun JS, Shin JW, Byun JI, Sunwoo JS, Jung KY. <em>Sleep</em>. 2025;48(4):zsae258. </p> <p class="tg-publication-doi">doi: <a href="https://doi.org/10.1093/sleep/zsae258" rel="external nofollow noopener" target="_blank">10.1093/sleep/zsae258</a></p> </div> </li> <li class="tg-publication-item"> <div> <p class="tg-publication-title"> <a href="https://doi.org/10.1093/sleep/zsae308" rel="external nofollow noopener" target="_blank">Prediction of phenoconversion into alpha-synucleinopathy in patients with isolated REM sleep behavior disorder using event-related potentials during visuospatial attention tasks</a> </p> <p class="tg-publication-meta"> Choi KM, Cha KS, Noh TG, Lee S, Shin YW, Byun JI, Jun JS, Shin JH, et al. <em>Sleep</em>. 2025;48(3):zsae308. </p> <p class="tg-publication-doi">doi: <a href="https://doi.org/10.1093/sleep/zsae308" rel="external nofollow noopener" target="_blank">10.1093/sleep/zsae308</a></p> </div> </li> </ol> </section> <section class="tg-section"> <div class="tg-section-head"> <h2>Conference Papers</h2> </div> <ol class="tg-publication-list"> <li class="tg-publication-item"> <div> <p class="tg-publication-title"> <a href="https://doi.org/10.1016/j.sleep.2025.107850" rel="external nofollow noopener" target="_blank">Clinical, Physiological, and Behavioral Characteristics of iRBD Patients With Ambulatory Dream Enactment Behaviors</a> </p> <p class="tg-publication-meta"> Kim SM, Noh TG, Han SJ, et al. <em>Sleep Medicine</em>. 2026;138:107850. </p> <p class="tg-publication-doi">doi: <a href="https://doi.org/10.1016/j.sleep.2025.107850" rel="external nofollow noopener" target="_blank">10.1016/j.sleep.2025.107850</a></p> </div> </li> <li class="tg-publication-item"> <div> <p class="tg-publication-title"> <a href="https://doi.org/10.1093/sleep/zsag091.0799" rel="external nofollow noopener" target="_blank">Independent Contributions of Aperiodic and Periodic EEG Features as Prognostic Biomarkers for Phenoconversion to Alpha-Synucleinopathies in iRBD</a> </p> <p class="tg-publication-meta"> Lee EG, Noh TG, Jung KY. <em>Sleep</em>. 2026;49(Suppl 1):A358. Abstract 0800. </p> <p class="tg-publication-doi">doi: <a href="https://doi.org/10.1093/sleep/zsag091.0799" rel="external nofollow noopener" target="_blank">10.1093/sleep/zsag091.0799</a></p> </div> </li> <li class="tg-publication-item"> <div> <p class="tg-publication-title"> <a href="https://doi.org/10.1093/sleep/zsag091.0798" rel="external nofollow noopener" target="_blank">Resting-State EEG Subtype and Stage Inference Identifies Distinct Prodromal Biotypes and Staging in iRBD</a> </p> <p class="tg-publication-meta"> Shin JW, Yook SH, Noh TG, Bae S, Jung KY, Kim H. <em>Sleep</em>. 2026;49(Suppl 1):A357-A358. Abstract 0799. </p> <p class="tg-publication-doi">doi: <a href="https://doi.org/10.1093/sleep/zsag091.0798" rel="external nofollow noopener" target="_blank">10.1093/sleep/zsag091.0798</a></p> </div> </li> <li class="tg-publication-item"> <div> <p class="tg-publication-title"> <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/jsr.14291" rel="external nofollow noopener" target="_blank">Increased phase amplitude coupling during phasic REM sleep in isolated REM sleep behavior disorder</a> </p> <p class="tg-publication-meta"> Jung KY, Noh TG, Han SJ, et al. <em>Journal of Sleep Research</em>. 2024;33(Suppl 1). </p> </div> </li> <li class="tg-publication-item"> <div> <p class="tg-publication-title"> <a href="https://doi.org/10.1093/sleep/zsae067.01041" rel="external nofollow noopener" target="_blank">Increased delta-gamma coupling during phasic REM sleep in isolated RBD</a> </p> <p class="tg-publication-meta"> Noh TG, Lee Y, Kim EY, Sunwoo JS, Jung KY. <em>Sleep</em>. 2024;47(Suppl 1):A447-A448. Abstract 1041. </p> <p class="tg-publication-doi">doi: <a href="https://doi.org/10.1093/sleep/zsae067.01041" rel="external nofollow noopener" target="_blank">10.1093/sleep/zsae067.01041</a></p> </div> </li> </ol> </section> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Tae-Gon Noh. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
   };
