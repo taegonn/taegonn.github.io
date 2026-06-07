@@ -10,29 +10,9 @@ nav_order: 2
 {% include tg-academic-style.html %}
 
 <div class="tg-page">
-  <section class="tg-cv-lead">
-    <div class="tg-kicker">Published work</div>
-    <p>Published journal articles and conference papers. Under-review manuscripts are intentionally omitted.</p>
-    <div class="tg-stat-grid" aria-label="Publication summary">
-      <div>
-        <span class="tg-stat-value">{{ site.data.publications.peer_reviewed | size }}</span>
-        <span class="tg-stat-label">peer-reviewed papers</span>
-      </div>
-      <div>
-        <span class="tg-stat-value">{{ site.data.publications.conference | size }}</span>
-        <span class="tg-stat-label">conference papers</span>
-      </div>
-      <div>
-        <span class="tg-stat-value">2025-2026</span>
-        <span class="tg-stat-label">publication span</span>
-      </div>
-    </div>
-  </section>
-
   <section class="tg-section">
     <div class="tg-section-head">
       <h2>Peer-reviewed Papers</h2>
-      <p class="tg-section-note">Published journal articles only.</p>
     </div>
     <ol class="tg-publication-list">
       {% for paper in site.data.publications.peer_reviewed %}
@@ -56,7 +36,6 @@ nav_order: 2
   <section class="tg-section">
     <div class="tg-section-head">
       <h2>Conference Papers</h2>
-      <p class="tg-section-note">Published abstracts and proceedings.</p>
     </div>
     <ol class="tg-publication-list">
       {% for paper in site.data.publications.conference %}

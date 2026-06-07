@@ -17,8 +17,6 @@ description: Compact curriculum vitae for graduate application review.
     </p>
     <div class="tg-cv-actions">
       <a href="mailto:ghgh3110@snu.ac.kr">ghgh3110@snu.ac.kr</a>
-      <a href="https://scholar.google.com/citations?user=gZOAJD4AAAAJ&hl=en">Google Scholar</a>
-      <a href="https://orcid.org/0009-0001-1388-0903">ORCID</a>
       <a href="{{ '/assets/rendercv/rendercv_output/Tae-Gon_Noh_CV.pdf' | relative_url }}">Download PDF</a>
     </div>
   </section>
@@ -67,61 +65,17 @@ description: Compact curriculum vitae for graduate application review.
 
   <section class="tg-cv-section">
     <div class="tg-section-head">
-      <h2>Research Focus</h2>
-      <p class="tg-section-note">Core research directions.</p>
+      <h2>Publications</h2>
     </div>
-    <div class="tg-focus-grid">
-      <article class="tg-focus-item">
-        <h3>Medical AI</h3>
-        <p>Foundation model-based medical AI for disease progression modeling in Parkinson's disease and isolated REM sleep behavior disorder.</p>
-      </article>
-      <article class="tg-focus-item">
-        <h3>Quantitative Biomarkers</h3>
-        <p>Sleep and electrophysiology biomarkers from PSG, EEG, EOG, EMG, ECG, brain MRI, and clinical data.</p>
-      </article>
-      <article class="tg-focus-item">
-        <h3>Clinical Prediction</h3>
-        <p>Survival modeling, heterogeneity modeling, longitudinal analysis, and clinical prediction in prodromal neurodegenerative disease.</p>
-      </article>
+    <div class="tg-cv-item">
+      <div class="tg-cv-date">Current</div>
+      <div>
+        <p class="tg-cv-title">Peer-reviewed and conference papers</p>
+        <p class="tg-cv-meta">
+          Maintained on the <a href="{{ '/publications/' | relative_url }}">Publications</a> page.
+        </p>
+      </div>
     </div>
-  </section>
-
-  <section class="tg-cv-section">
-    <div class="tg-section-head">
-      <h2>Peer-reviewed Papers</h2>
-      <p class="tg-section-note">{{ site.data.publications.peer_reviewed | size }} published journal articles.</p>
-    </div>
-    <ol class="tg-cv-publications">
-      {% for paper in site.data.publications.peer_reviewed %}
-        <li>
-          <div>
-            <p class="tg-cv-title"><a href="{{ paper.url }}">{{ paper.title }}</a></p>
-            <p class="tg-cv-publication-meta">
-              {{ paper.authors }}. <em>{{ paper.venue }}</em>. {{ paper.year }}{% if paper.volume %};{{ paper.volume }}{% endif %}{% if paper.issue %}({{ paper.issue }}){% endif %}{% if paper.pages %}:{{ paper.pages }}{% endif %}.
-            </p>
-          </div>
-        </li>
-      {% endfor %}
-    </ol>
-  </section>
-
-  <section class="tg-cv-section">
-    <div class="tg-section-head">
-      <h2>Conference Papers</h2>
-      <p class="tg-section-note">{{ site.data.publications.conference | size }} published abstracts and proceedings.</p>
-    </div>
-    <ol class="tg-cv-publications">
-      {% for paper in site.data.publications.conference %}
-        <li>
-          <div>
-            <p class="tg-cv-title"><a href="{{ paper.url }}">{{ paper.title }}</a></p>
-            <p class="tg-cv-publication-meta">
-              {{ paper.authors }}. <em>{{ paper.venue }}</em>. {{ paper.year }}{% if paper.volume %};{{ paper.volume }}{% endif %}{% if paper.issue %}({{ paper.issue }}){% endif %}{% if paper.pages %}:{{ paper.pages }}{% endif %}{% if paper.abstract_number %}. Abstract {{ paper.abstract_number }}{% endif %}.
-            </p>
-          </div>
-        </li>
-      {% endfor %}
-    </ol>
   </section>
 
   <section class="tg-cv-section">
