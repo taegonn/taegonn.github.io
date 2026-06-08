@@ -35,7 +35,7 @@ latest_posts:
       </nav>
     </div>
     <div class="tg-hero-media">
-      <img class="tg-portrait" src="{{ '/assets/img/tg-profile.jpg' | relative_url }}" alt="Tae-Gon Noh">
+      <img class="tg-portrait" src="{{ '/assets/img/tg-profile-20260608.jpg' | relative_url }}" alt="Tae-Gon Noh">
     </div>
   </section>
 
