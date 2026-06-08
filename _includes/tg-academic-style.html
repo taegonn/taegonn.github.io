@@ -49,7 +49,7 @@
     border-bottom: 1px solid var(--tg-line);
     display: grid;
     gap: 2.8rem;
-    grid-template-columns: minmax(0, 1fr) 230px;
+    grid-template-columns: minmax(0, 1fr) 260px;
     padding: 2.6rem 0 2.5rem;
   }
 
@@ -80,13 +80,14 @@
   }
 
   .tg-portrait {
-    aspect-ratio: 1;
+    aspect-ratio: 4 / 5;
     border: 1px solid var(--tg-line);
-    border-radius: 50%;
+    border-radius: 8px;
     box-shadow: 0 16px 34px rgba(31, 36, 41, 0.14);
     display: block;
     object-fit: cover;
-    width: 218px;
+    object-position: 50% 50%;
+    width: 250px;
   }
 
   .tg-links {
@@ -379,7 +380,7 @@
     }
 
     .tg-portrait {
-      width: 168px;
+      width: 190px;
     }
 
     .tg-cv-skills {
