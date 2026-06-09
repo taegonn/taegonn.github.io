@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: published peer-reviewed and conference papers.
+description: Published peer-reviewed and conference papers by Tae-Gon Noh (노태곤).
 nav: true
 nav_order: 2
 ---

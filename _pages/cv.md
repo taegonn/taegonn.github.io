@@ -4,7 +4,7 @@ permalink: /cv/
 title: CV
 nav: true
 nav_order: 3
-description: Compact curriculum vitae for graduate application review.
+description: Curriculum vitae of Tae-Gon Noh (노태곤), M.S. candidate in Neuroscience at Seoul National University.
 ---
 
 {% include tg-academic-style.html %}
